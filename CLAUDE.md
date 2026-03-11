@@ -5,7 +5,7 @@ This file provides guidance for AI assistants (Claude and others) working on thi
 ## Project Overview
 
 **Repository**: `panosni/IND_datacenters`
-**Purpose**: India datacenter infrastructure — scope and implementation details to be defined as the project evolves.
+**Purpose**: Indonesia datacenter infrastructure — scope and implementation details to be defined as the project evolves.
 **Status**: Early-stage. Only a README exists; no source code, tests, or configuration has been added yet.
 
 ---
