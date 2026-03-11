@@ -1,0 +1,166 @@
+{
+  "metadata": {
+    "title": "Indonesia Data Center Database",
+    "last_updated": "2026-03-11",
+    "sources": [
+      "Arizton Advisory & Intelligence",
+      "Mordor Intelligence",
+      "ResearchAndMarkets.com",
+      "DataCenterMap.com",
+      "Company press releases and filings",
+      "Jakarta Globe",
+      "GlobeNewsWire"
+    ],
+    "notes": "Capacity figures represent IT load capacity where available. Some facilities lack public MW disclosures."
+  },
+  "market_summary": {
+    "total_existing_facilities": 88,
+    "total_upcoming_facilities": 25,
+    "cities_covered": 17,
+    "operational_capacity_mw": 307,
+    "additional_capacity_2025_2030_mw": 563,
+    "total_projected_capacity_2030_mw": 3560,
+    "market_value_2025_usd_billion": 2.81,
+    "market_value_2031_projected_usd_billion": 6.08,
+    "cagr_percent": 13.73,
+    "jakarta_market_share_percent": 56.72,
+    "batam_cagr_percent": 21.70
+  },
+  "major_investments": [
+    {
+      "company": "Digital Edge (Stonepeak)",
+      "project": "CGK Campus, GIIC Bekasi",
+      "investment_usd_billion": 4.5,
+      "capacity_mw": 500,
+      "scalable_to_mw": 1000,
+      "status": "Under Construction",
+      "timeline": "Q4 2026 - Q2 2027 (Phase 1)",
+      "pue_target": 1.25
+    },
+    {
+      "company": "DAMAC Digital",
+      "project": "Cikarang AI-Ready DC",
+      "investment_usd_billion": 2.3,
+      "capacity_mw": 144,
+      "status": "Planned",
+      "timeline": "2026"
+    },
+    {
+      "company": "Microsoft",
+      "project": "Indonesia Central Cloud Region",
+      "investment_usd_billion": 1.7,
+      "capacity_mw": null,
+      "status": "Under Construction",
+      "timeline": "2024-2028"
+    },
+    {
+      "company": "DCI Indonesia",
+      "project": "H2 Pertiwi Lestari",
+      "investment_usd_billion": null,
+      "capacity_mw": 600,
+      "status": "Under Construction (Phase 1: 135 MW)",
+      "timeline": "2026+"
+    },
+    {
+      "company": "BDx Indonesia",
+      "project": "CGK4 Jatiluhur AI Campus",
+      "investment_usd_billion": null,
+      "capacity_mw": 500,
+      "status": "Planned",
+      "timeline": "2027"
+    },
+    {
+      "company": "Tencent",
+      "project": "Indonesia Expansion",
+      "investment_usd_billion": 0.5,
+      "capacity_mw": null,
+      "status": "Planned",
+      "timeline": "2026"
+    },
+    {
+      "company": "Korea Investment Partners / Sinar Mas Land + Digital Realty / Mitra Aditama",
+      "project": "Multiple JV Facilities",
+      "investment_usd_billion": 0.75,
+      "capacity_mw": null,
+      "status": "Planned",
+      "timeline": "2024-2026"
+    },
+    {
+      "company": "Indosat-NVIDIA",
+      "project": "AI Factory Jakarta",
+      "investment_usd_billion": 0.25,
+      "capacity_mw": 80,
+      "status": "Operational",
+      "timeline": "October 2024"
+    },
+    {
+      "company": "Princeton Digital Group",
+      "project": "Cibitung AI Campus + Batam",
+      "investment_usd_billion": 0.11,
+      "capacity_mw": 118,
+      "status": "Under Construction / Planned",
+      "timeline": "2025-2026"
+    },
+    {
+      "company": "EdgeConneX",
+      "project": "Jakarta Campus Expansion",
+      "investment_usd_billion": null,
+      "capacity_mw": 200,
+      "status": "Under Construction",
+      "timeline": "2025"
+    }
+  ],
+  "tax_incentives": {
+    "corporate_income_tax_rate_percent": 22,
+    "tax_holiday": {
+      "regulation": "PMK No. 69/2024",
+      "eligible_sectors": "18 pioneer industries including data centers and digital infrastructure",
+      "thresholds": [
+        {
+          "investment_range": "IDR 100B - 500B (USD 6.6M - 33.3M)",
+          "cit_reduction_percent": 50,
+          "duration_years": 5
+        },
+        {
+          "investment_range": "Above IDR 500B (USD 33.3M+)",
+          "cit_reduction_percent": 100,
+          "duration_years": "5-20 depending on investment size"
+        }
+      ],
+      "transition_benefit": "50% CIT reduction for 2 additional years after holiday ends",
+      "expiry": "December 2025, extension to 2026 in progress",
+      "oecd_pillar_two_impact": "Domestic top-up tax applies to MNEs subject to 15% global minimum"
+    },
+    "sez_incentives": {
+      "vat_on_imported_equipment_percent": 0,
+      "capex_saving_percent": 11,
+      "foreign_ownership_percent": 100,
+      "approval_timeline_weeks": "10 (via OSS, down from 24)"
+    },
+    "other_incentives": {
+      "investment_allowance": "30% of total investment deductible over 6 years",
+      "dividend_withholding_tax_percent": 10,
+      "loss_carry_forward_years": 10,
+      "rd_super_deduction_percent": 300,
+      "accelerated_depreciation": true
+    }
+  },
+  "fiscal_cost_assessment": {
+    "total_tax_expenditure_2023_idr_trillion": 362.5,
+    "total_tax_expenditure_2023_usd_billion": 23.8,
+    "tax_expenditure_as_pct_gdp_2023": 1.73,
+    "tax_holiday_allowance_2018_2022_idr_trillion": 20,
+    "investment_attracted_2018_2022_idr_trillion": 370,
+    "estimated_dc_sector_tax_expenditure": {
+      "methodology": "Bottom-up estimate based on known investments and tax holiday parameters",
+      "total_announced_dc_investment_usd_billion": 11.2,
+      "assumed_profit_margin_percent": 15,
+      "implied_annual_taxable_income_usd_billion": 1.68,
+      "cit_rate_percent": 22,
+      "annual_revenue_foregone_full_holiday_usd_million": 370,
+      "annual_revenue_foregone_full_holiday_idr_trillion": 5.7,
+      "ten_year_cumulative_foregone_usd_billion": 3.7,
+      "notes": "Estimate assumes all major investments qualify for 100% tax holiday. Actual foregone revenue depends on profitability timelines, depreciation schedules, and OECD Pillar Two adjustments. Conservative estimate."
+    }
+  }
+}
