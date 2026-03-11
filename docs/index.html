@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indonesia Data Centers — Market Intelligence</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="brand">&#x1F1EE;&#x1F1E9; Indonesia <span>Data Centers</span></div>
+  <ul>
+    <li><a href="#map-section">Map</a></li>
+    <li><a href="#investments">Investments</a></li>
+    <li><a href="#fiscal">Fiscal Cost</a></li>
+    <li><a href="#database">Database</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <h1>Indonesia Data Center Market</h1>
+  <p>Comprehensive intelligence on existing and planned data centers, investments, and the fiscal cost of Indonesia's tax incentive regime. Data as of March 2026.</p>
+  <div class="kpi-grid">
+    <div class="kpi"><div class="val">88</div><div class="lbl">Existing Facilities</div></div>
+    <div class="kpi"><div class="val">25</div><div class="lbl">Upcoming Facilities</div></div>
+    <div class="kpi"><div class="val">307 MW</div><div class="lbl">Operational Capacity</div></div>
+    <div class="kpi"><div class="val">$11.2B</div><div class="lbl">Announced Investment</div></div>
+    <div class="kpi"><div class="val">$6.08B</div><div class="lbl">Market Value 2031</div></div>
+    <div class="kpi"><div class="val">3,560 MW</div><div class="lbl">Projected 2030</div></div>
+    <div class="kpi"><div class="val">$370M</div><div class="lbl">Annual Tax Foregone</div></div>
+  </div>
+</div>
+
+<!-- MAP -->
+<div class="section" id="map-section">
+  <div class="section-title">Interactive Map — Data Center Locations</div>
+  <div class="card">
+    <div class="map-controls">
+      <label>Filter:</label>
+      <button class="filter-btn all active-filter" onclick="filterMap('all',this)">All</button>
+      <button class="filter-btn op" onclick="filterMap('Operational',this)">Operational</button>
+      <button class="filter-btn uc" onclick="filterMap('Under Construction',this)">Under Construction</button>
+      <button class="filter-btn pl" onclick="filterMap('Planned',this)">Planned</button>
+    </div>
+    <div id="map"></div>
+  </div>
+</div>
+
+<!-- CHARTS -->
+<div class="section" id="investments">
+  <div class="section-title">Investment Pipeline</div>
+  <div class="charts-row">
+    <div class="chart-card">
+      <h3>Top Investments by Value (USD Billion)</h3>
+      <canvas id="investChart" height="280"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Planned Capacity Additions (MW)</h3>
+      <canvas id="capChart" height="280"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- FISCAL -->
+<div class="section" id="fiscal">
+  <div class="section-title">Fiscal Cost of Tax Incentives</div>
+  <div class="fiscal-grid">
+    <div class="fiscal-kpi navy"><div class="fval">22%</div><div class="flbl">Standard CIT Rate</div><div class="fnote">Reduced to 0% for 5-20 years under PMK 69/2024 for qualifying investments</div></div>
+    <div class="fiscal-kpi red"><div class="fval">$370M/yr</div><div class="flbl">Annual Revenue Foregone</div><div class="fnote">Estimated CIT foregone from data center tax holidays on $11.2B in announced investments</div></div>
+    <div class="fiscal-kpi orange"><div class="fval">$3.7B</div><div class="flbl">10-Year Cumulative Cost</div><div class="fnote">Cumulative tax revenue foregone over the typical holiday period</div></div>
+    <div class="fiscal-kpi teal"><div class="fval">-$250M/yr</div><div class="flbl">OECD Pillar Two Recovery</div><div class="fnote">Domestic top-up tax (QDMTT) recovers ~$250M/yr via 15% global minimum floor</div></div>
+    <div class="fiscal-kpi navy"><div class="fval">18.5x</div><div class="flbl">Investment Leverage</div><div class="fnote">Historical: IDR 20T in incentives attracted IDR 370T in investment (2018-2022)</div></div>
+    <div class="fiscal-kpi orange"><div class="fval">$150M</div><div class="flbl">SEZ VAT Foregone</div><div class="fnote">0% VAT on equipment imports in Special Economic Zones (~11% capex saving)</div></div>
+  </div>
+
+  <div class="card" style="margin-top:1.25rem">
+    <h3 style="padding:1.25rem 1.5rem 0;color:var(--navy)">Tax Holiday Structure (PMK 69/2024)</h3>
+    <div style="padding:1rem 1.5rem">
+      <table class="incentive-table">
+        <thead><tr><th>Investment Size</th><th>USD Equivalent</th><th>CIT Reduction</th><th>Duration</th><th>After Holiday</th></tr></thead>
+        <tbody>
+          <tr><td>IDR 100B - 500B</td><td>$6.6M - $33M</td><td>50%</td><td>5 years</td><td>Normal CIT</td></tr>
+          <tr><td>IDR 500B - 1T</td><td>$33M - $67M</td><td>100%</td><td>5 years</td><td>50% for 2 yrs</td></tr>
+          <tr><td>IDR 1T - 5T</td><td>$67M - $333M</td><td>100%</td><td>7 years</td><td>50% for 2 yrs</td></tr>
+          <tr><td>IDR 5T - 15T</td><td>$333M - $1B</td><td>100%</td><td>10 years</td><td>50% for 2 yrs</td></tr>
+          <tr><td>IDR 15T - 30T</td><td>$1B - $2B</td><td>100%</td><td>15 years</td><td>50% for 2 yrs</td></tr>
+          <tr><td>Above IDR 30T</td><td>$2B+</td><td><strong>100%</strong></td><td><strong>20 years</strong></td><td>50% for 2 yrs</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="padding:.75rem 1.5rem 1.25rem">
+      <canvas id="fiscalChart" height="120"></canvas>
+    </div>
+  </div>
+</div>
+
+<!-- DATABASE -->
+<div class="section" id="database">
+  <div class="section-title">Facility Database</div>
+  <div class="table-controls">
+    <input type="text" id="searchBox" placeholder="Search operator, city, facility..." oninput="renderTable()">
+    <select id="statusFilter" onchange="renderTable()"><option value="">All Statuses</option><option>Operational</option><option>Under Construction</option><option>Planned</option></select>
+    <select id="cityFilter" onchange="renderTable()"><option value="">All Cities</option></select>
+    <span id="rowCount"></span>
+  </div>
+  <div class="table-wrap">
+    <table class="dc-table">
+      <thead><tr>
+        <th onclick="sortTable('operator')">Operator</th>
+        <th onclick="sortTable('facility_name')">Facility</th>
+        <th onclick="sortTable('city')">City</th>
+        <th onclick="sortTable('province')">Province</th>
+        <th onclick="sortTable('status')">Status</th>
+        <th onclick="sortTable('capacity_mw')">Live MW</th>
+        <th onclick="sortTable('planned_capacity_mw')">Planned MW</th>
+        <th onclick="sortTable('investment_usd_million')">Invest ($M)</th>
+        <th onclick="sortTable('year_operational')">Year</th>
+      </tr></thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<footer>
+  Data compiled from Arizton, Mordor Intelligence, ResearchAndMarkets, company press releases, and Indonesian Ministry of Finance. Last updated March 2026.
+  <br><a href="indonesia_dc_report.pdf" target="_blank">Full Report (PDF)</a> | <a href="indonesia_dc_slides.pdf" target="_blank">Slides (PDF)</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
