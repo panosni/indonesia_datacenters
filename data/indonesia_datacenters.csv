@@ -1,46 +1,46 @@
-operator,facility_name,location,city,province,status,capacity_mw,planned_capacity_mw,tier,investment_usd_million,year_operational,notes
-DCI Indonesia,JK5,Cibitung,Bekasi,West Java,Operational,36,,IV,,2023,Part of Cibitung campus
-DCI Indonesia,JK6,Cibitung,Bekasi,West Java,Operational,36,,IV,,2024,Cloud provider anchor tenant
-DCI Indonesia,H1 Campus,Cibitung,Bekasi,West Java,Under Construction,,73,IV,,2025,Full campus build-out
-DCI Indonesia,H2 Pertiwi Lestari (Phase 1),Cibitung,Bekasi,West Java,Under Construction,135,600,IV,,2026,First solar-powered edge DC with Salim Group; 30 MW initial
-DCI Indonesia,H2-02,Cibitung,Bekasi,West Java,Planned,,30,IV,,2026,Solar-powered edge data center
-Telkom Indonesia (NeutraDC),NeutraDC Portfolio (33 sites),Multiple,Multiple,Multiple,Operational,42,,III,,Various,70% utilization; 19 micro-edge sites
-Telkom Indonesia (NeutraDC),Cikarang Expansion,Cikarang,Bekasi,West Java,Under Construction,,60,III,,2025,Campus capacity expansion
-NTT DATA,Jakarta 2 (JKT2),Jakarta,Jakarta,DKI Jakarta,Operational,9.4,,III,,2020,7700 sqm IT space
-NTT DATA,Jakarta 3 (JKT3),Cikarang,Bekasi,West Java,Operational,15.2,45,III,,2023,18000 sqm; 4-story facility
-NTT DATA,Jakarta 2 Annex (JKT2A),Jakarta,Jakarta,DKI Jakarta,Under Construction,12,,III,,2026,5800 sqm; early 2026 completion
-SpaceDC,ID01,Jakarta,Jakarta,DKI Jakarta,Operational,25.45,,III,,2022,PUE 1.3; green positioning
-EdgeConneX,GTN Cikarang,Cikarang,Bekasi,West Java,Operational,7,90,III,,2022,Acquired 2022; expansion planned
-EdgeConneX,Jakarta Campus,Bekasi,Bekasi,West Java,Under Construction,30,200,III,,2025,Multi-phase 30 MW each; hyperscale
-Princeton Digital Group,JC3,Jakarta,Jakarta,DKI Jakarta,Operational,120,,III,,2023,Carrier-neutral; AI-ready; PUE <1.4
-Princeton Digital Group,Cibitung Campus,Cibitung,Bekasi,West Java,Under Construction,22,,III,110,2025,IDR 1.7T green loan; AI-ready
-Princeton Digital Group,Batam Campus,Batam,Batam,Riau Islands,Planned,,96,III,,2026,Cross-strait cable demand
-Digital Edge (Indonet),EDGE1,South Jakarta,Jakarta,DKI Jakarta,Operational,15,,III,,2021,Part of 29 MW combined Jakarta capacity
-Digital Edge (Indonet),EDGE2,South Jakarta,Jakarta,DKI Jakarta,Operational,14,23,III,325,2026,Final phase 23 MW; $325M credit facility
-Digital Edge (Indonet),CGK Campus,GIIC Bekasi,Bekasi,West Java,Under Construction,,500,III,4500,2026-2027,500 MW scalable to 1 GW; PUE 1.25; liquid cooling; $4.5B investment
-DAMAC Digital,Cikarang DC,Cikarang,Bekasi,West Java,Planned,,144,III,2300,2026,AI-ready; part of 300 MW SEA strategy
-Digital Realty / Bersama Digital,CGK10,Central Jakarta,Jakarta,DKI Jakarta,Operational,5,,III,,2025,JV with Bersama Digital Infrastructure Asia
-Digital Realty / Bersama Digital,CGK11,Central Jakarta,Jakarta,DKI Jakarta,Planned,,32,III,,2026,Campus expansion
-BDx Indonesia,CGK4 Jatiluhur,Jatiluhur,Purwakarta,West Java,Planned,,500,III,,2027,500 MW renewable-powered AI campus
-Equinix / Astra International,JK1,Jakarta,Jakarta,DKI Jakarta,Operational,,,III,,2024,AI-ready; 50+ network providers
-ST Telemedia GDC,STT Jakarta-2,Jakarta,Jakarta,DKI Jakarta,Under Construction,24,,III,,2025,Ground broken
-IndoKeppel Data Centres,IKDC1,Bogor,Bogor,West Java,Under Construction,,,III,,2025,7-hectare campus
-Gaw Capital / Sinar Primera,Batam Phase 1,Batam,Batam,Riau Islands,Operational,5.2,20,III,,2024,Phase 1 live; 20 MW planned
-DayOne / INA JV,Nongsa Digital Park,Batam,Batam,Riau Islands,Under Construction,,72,III,,2026,JV with Indonesia Investment Authority
-Indosat-NVIDIA,AI Factory,Jakarta,Jakarta,DKI Jakarta,Operational,,,III,250,2024,AI factory; H100 GPUs; 80 MW future phases
-Tencent,Indonesia Expansion,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,500,2026,Capacity expansion pledge Nov 2024
-Microsoft,Indonesia Central Cloud Region,Jakarta,Jakarta,DKI Jakarta,Under Construction,,,III,1700,2024-2028,First cloud region in Indonesia; AI-ready
-Korea Investment Partners / Sinar Mas Land,JV Facilities,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,375,2025,Part of $750M+ JV commitments
-Elitery Data Center,Elitery DC,Jakarta,Jakarta,DKI Jakarta,Operational,,,III,,Various,Colocation operator
-Moratelindo (NDC),NDC Facilities,Multiple,Multiple,Multiple,Operational,,,III,,Various,Nusantara Data Center
-Biznet,Biznet DC,Jakarta,Jakarta,DKI Jakarta,Operational,,,III,,Various,Colocation and connectivity
-Datacomm,Datacomm DC,Jakarta,Jakarta,DKI Jakarta,Operational,,,III,,Various,Managed services and colocation
-Pure Data Centres,Pure DC,Jakarta,Jakarta,DKI Jakarta,Operational,,,III,,Various,Colocation operator
-SEAX Indonesia Pratama,SEAX DC,Jakarta,Jakarta,DKI Jakarta,Operational,,,III,,Various,Submarine cable connected
-Oracle,Indonesia North Cloud Region,Batam,Batam,Riau Islands,Operational,,,III,,2025,Leased from DayOne at Nongsa Digital Park
-Metta DC,Metta Facilities,Jakarta,Jakarta,DKI Jakarta,Operational,,,III,,Various,Colocation operator
-K2 Strategic,K2 DC,Jakarta,Jakarta,DKI Jakarta,Operational,,,III,,Various,Colocation operator
-Aslan Energy Capital,Aslan DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,New entrant
-BW Digital,BW DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,New entrant
-Triputra Group,Triputra DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,New entrant
-LG Sinar Mas,LG SM DC,Jakarta,Jakarta,DKI Jakarta,Under Construction,,,III,,2025,Joint venture facility
+operator,facility_name,location,city,province,status,capacity_mw,planned_capacity_mw,tier,investment_usd_million,year_operational,mw_imputed,notes
+DCI Indonesia,JK5,Cibitung,Bekasi,West Java,Operational,36,,IV,,2023,0,Part of Cibitung campus
+DCI Indonesia,JK6,Cibitung,Bekasi,West Java,Operational,36,,IV,,2024,0,Cloud provider anchor tenant
+DCI Indonesia,H1 Campus,Cibitung,Bekasi,West Java,Under Construction,,73,IV,,2025,,Full campus build-out
+DCI Indonesia,H2 Pertiwi Lestari (Phase 1),Cibitung,Bekasi,West Java,Under Construction,135,600,IV,,2026,,First solar-powered edge DC with Salim Group; 30 MW initial
+DCI Indonesia,H2-02,Cibitung,Bekasi,West Java,Planned,,30,IV,,2026,,Solar-powered edge data center
+Telkom Indonesia (NeutraDC),NeutraDC Portfolio (33 sites),Multiple,Multiple,Multiple,Operational,42,,III,,Various,0,70% utilization; 19 micro-edge sites
+Telkom Indonesia (NeutraDC),Cikarang Expansion,Cikarang,Bekasi,West Java,Under Construction,,60,III,,2025,,Campus capacity expansion
+NTT DATA,Jakarta 2 (JKT2),Jakarta,Jakarta,DKI Jakarta,Operational,9.4,,III,,2020,0,7700 sqm IT space
+NTT DATA,Jakarta 3 (JKT3),Cikarang,Bekasi,West Java,Operational,15.2,45,III,,2023,0,18000 sqm; 4-story facility
+NTT DATA,Jakarta 2 Annex (JKT2A),Jakarta,Jakarta,DKI Jakarta,Under Construction,12,,III,,2026,,5800 sqm; early 2026 completion
+SpaceDC,ID01,Jakarta,Jakarta,DKI Jakarta,Operational,25.45,,III,,2022,0,PUE 1.3; green positioning
+EdgeConneX,GTN Cikarang,Cikarang,Bekasi,West Java,Operational,7,90,III,,2022,0,Acquired 2022; expansion planned
+EdgeConneX,Jakarta Campus,Bekasi,Bekasi,West Java,Under Construction,30,200,III,,2025,,Multi-phase 30 MW each; hyperscale
+Princeton Digital Group,JC3,Jakarta,Jakarta,DKI Jakarta,Operational,120,,III,,2023,0,Carrier-neutral; AI-ready; PUE <1.4
+Princeton Digital Group,Cibitung Campus,Cibitung,Bekasi,West Java,Under Construction,22,,III,110,2025,,IDR 1.7T green loan; AI-ready
+Princeton Digital Group,Batam Campus,Batam,Batam,Riau Islands,Planned,,96,III,,2026,,Cross-strait cable demand
+Digital Edge (Indonet),EDGE1,South Jakarta,Jakarta,DKI Jakarta,Operational,15,,III,,2021,0,Part of 29 MW combined Jakarta capacity
+Digital Edge (Indonet),EDGE2,South Jakarta,Jakarta,DKI Jakarta,Operational,14,23,III,325,2026,0,Final phase 23 MW; $325M credit facility
+Digital Edge (Indonet),CGK Campus,GIIC Bekasi,Bekasi,West Java,Under Construction,,500,III,4500,2026-2027,,500 MW scalable to 1 GW; PUE 1.25; liquid cooling; $4.5B investment
+DAMAC Digital,Cikarang DC,Cikarang,Bekasi,West Java,Planned,,144,III,2300,2026,,AI-ready; part of 300 MW SEA strategy
+Digital Realty / Bersama Digital,CGK10,Central Jakarta,Jakarta,DKI Jakarta,Operational,5,,III,,2025,0,JV with Bersama Digital Infrastructure Asia
+Digital Realty / Bersama Digital,CGK11,Central Jakarta,Jakarta,DKI Jakarta,Planned,,32,III,,2026,,Campus expansion
+BDx Indonesia,CGK4 Jatiluhur,Jatiluhur,Purwakarta,West Java,Planned,,500,III,,2027,,500 MW renewable-powered AI campus
+Equinix / Astra International,JK1,Jakarta,Jakarta,DKI Jakarta,Operational,2.4,18,III,74,2024,0,"Phase 1 live: 550 cabinets / 2.4 MW; full design 18 MW / 1600 cabinets; source: kompas.id / Kompas.id May 2025"
+ST Telemedia GDC,STT Jakarta-2,Jakarta,Jakarta,DKI Jakarta,Under Construction,24,,III,,2025,,Ground broken
+IndoKeppel Data Centres,IKDC1,Bogor,Bogor,West Java,Under Construction,,,III,,2025,,7-hectare campus
+Gaw Capital / Sinar Primera,Batam Phase 1,Batam,Batam,Riau Islands,Operational,5.2,20,III,,2024,0,Phase 1 live; 20 MW planned
+DayOne / INA JV,Nongsa Digital Park,Batam,Batam,Riau Islands,Under Construction,,72,III,,2026,,JV with Indonesia Investment Authority
+Indosat-NVIDIA (Lintasarta),AI Factory (GPU Merdeka),Jakarta,Jakarta,DKI Jakarta,Operational,5,80,III,250,2024,1,"Phase 1 MW imputed: 80 kW/rack GPU density; 80 MW reserved for future phases; no Phase 1 MW publicly disclosed; source: CNBC / DCD / Lintasarta press releases"
+Tencent,Indonesia Expansion,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,500,2026,,Capacity expansion pledge Nov 2024
+Microsoft,Indonesia Central Cloud Region,Jakarta,Jakarta,DKI Jakarta,Under Construction,,,III,1700,2024-2028,,First cloud region in Indonesia; AI-ready
+Korea Investment Partners / Sinar Mas Land,JV Facilities,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,375,2025,,Part of $750M+ JV commitments
+Elitery Data Center,Elitery DC,South Jakarta,Jakarta,DKI Jakarta,Operational,0.7,,III,,Various,0,"700 kW critical power; Jl. Raya Pajajaran No.17; source: datacenterHawk"
+Moratelindo (NDC),NDC Jakarta,East Jakarta,Jakarta,DKI Jakarta,Operational,1,,III,,Various,0,"1 MW; Tier III; Jl. Jatinegara Barat No.44; network hub for 6-city NDC; source: datacentermap.com"
+Biznet,Biznet DC (Technovillage + MidPlaza),Cimanggis / Central Jakarta,Multiple,Multiple,Operational,7,,III,,Various,1,"Imputed: Technovillage ~6 MW typical operating load (4x2.5 MVA transformers; 2500 racks) + MidPlaza ~1 MW (700 sqm); source: PCplus.co.id Technovillage profile"
+Datacomm,Datacomm DC (HQ + Alam Sutera + Jababeka),Jakarta / Tangerang / Cikarang,Multiple,Multiple,Operational,2,,III,,Various,1,"Imputed: HQ (30 racks ~0.15 MW) + Alam Sutera (medium SME DC) + Jababeka TIA-942 Tier III; combined ~2 MW; no public MW disclosure"
+Pure Data Centres,Pure DC,Jakarta,Jakarta,DKI Jakarta,Operational,20,,III,,2019,0,"20 MW IT load; 20000 sqm; hyperscale; source: DCD / datacentermap.com / datacenternews.asia"
+SEAX Indonesia Pratama,SEAX DC (BSD Technopark),BSD City,South Tangerang,Banten,Operational,15,30,III,,2025,1,"Phase 1 completed Q4 2025; 30 MVA total campus; dual-phase 4-8 data halls; Phase 1 MW imputed as ~50% of campus total; source: SEAX press release / DCD"
+Oracle,Indonesia North Cloud Region (Batam),Nongsa Digital Park,Batam,Riau Islands,Operational,20,120,III,,2025,1,"Launched July 2025 as sole tenant of DayOne Nongsa Digital Park; DayOne plots support ≥120 MW; Phase 1 MW imputed; source: Bloomberg / Fintech News Indonesia / DCD"
+Metta DC,ID01 (Jababeka),Jababeka Industrial Estate,Bekasi,West Java,Operational,35,,III,,Various,0,"35 MW; 3000 racks; 3-story; 1.8 ha site; IIF IDR 629.8B loan; source: DCD / datacenterdynamics.com"
+K2 Strategic (K2 Data Centres / Sinar Mas Land JV),K2 JKT1,Kota Deltamas,Bekasi,West Java,Operational,15,58.8,III,,2024,1,"Phase 1 ready early 2024; 58.8 MW total at full build (4 buildings) confirmed; Phase 1 MW imputed as ~1/4 total (~15 MW); Tier III TCDD+TCCF; LEED Gold; source: K2/SML JV press release / DCD"
+Aslan Energy Capital,Aslan DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,,New entrant
+BW Digital,BW DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,,New entrant
+Triputra Group,Triputra DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,,New entrant
+LG Sinar Mas,LG SM DC,Jakarta,Jakarta,DKI Jakarta,Under Construction,,,III,,2025,,Joint venture facility
