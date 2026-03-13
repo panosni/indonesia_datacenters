@@ -1,46 +1,46 @@
-operator,facility_name,location,city,province,status,capacity_mw,planned_capacity_mw,tier,investment_usd_million,year_operational,mw_imputed,notes
-DCI Indonesia,JK5,Cibitung,Bekasi,West Java,Operational,36,,IV,,2023,0,Part of Cibitung campus
-DCI Indonesia,JK6,Cibitung,Bekasi,West Java,Operational,36,,IV,,2024,0,Cloud provider anchor tenant
-DCI Indonesia,H1 Campus,Cibitung,Bekasi,West Java,Under Construction,,73,IV,,2025,,Full campus build-out
-DCI Indonesia,H2 Pertiwi Lestari (Phase 1),Cibitung,Bekasi,West Java,Under Construction,135,600,IV,,2026,,First solar-powered edge DC with Salim Group; 30 MW initial
-DCI Indonesia,H2-02,Cibitung,Bekasi,West Java,Planned,,30,IV,,2026,,Solar-powered edge data center
-Telkom Indonesia (NeutraDC),NeutraDC Portfolio (33 sites),Multiple,Multiple,Multiple,Operational,42,,III,,Various,0,70% utilization; 19 micro-edge sites
-Telkom Indonesia (NeutraDC),Cikarang Expansion,Cikarang,Bekasi,West Java,Under Construction,,60,III,,2025,,Campus capacity expansion
-NTT DATA,Jakarta 2 (JKT2),Jakarta,Jakarta,DKI Jakarta,Operational,9.4,,III,,2020,0,7700 sqm IT space
-NTT DATA,Jakarta 3 (JKT3),Cikarang,Bekasi,West Java,Operational,15.2,45,III,,2023,0,18000 sqm; 4-story facility
-NTT DATA,Jakarta 2 Annex (JKT2A),Jakarta,Jakarta,DKI Jakarta,Under Construction,12,,III,,2026,,5800 sqm; early 2026 completion
-SpaceDC,ID01,Jakarta,Jakarta,DKI Jakarta,Operational,25.45,,III,,2022,0,PUE 1.3; green positioning
-EdgeConneX,GTN Cikarang,Cikarang,Bekasi,West Java,Operational,7,90,III,,2022,0,Acquired 2022; expansion planned
-EdgeConneX,Jakarta Campus,Bekasi,Bekasi,West Java,Under Construction,30,200,III,,2025,,Multi-phase 30 MW each; hyperscale
-Princeton Digital Group,JC3,Jakarta,Jakarta,DKI Jakarta,Operational,120,,III,,2023,0,Carrier-neutral; AI-ready; PUE <1.4
-Princeton Digital Group,Cibitung Campus,Cibitung,Bekasi,West Java,Under Construction,22,,III,110,2025,,IDR 1.7T green loan; AI-ready
-Princeton Digital Group,Batam Campus,Batam,Batam,Riau Islands,Planned,,96,III,,2026,,Cross-strait cable demand
-Digital Edge (Indonet),EDGE1,South Jakarta,Jakarta,DKI Jakarta,Operational,15,,III,,2021,0,Part of 29 MW combined Jakarta capacity
-Digital Edge (Indonet),EDGE2,South Jakarta,Jakarta,DKI Jakarta,Operational,14,23,III,325,2026,0,Final phase 23 MW; $325M credit facility
-Digital Edge (Indonet),CGK Campus,GIIC Bekasi,Bekasi,West Java,Under Construction,,500,III,4500,2026-2027,,500 MW scalable to 1 GW; PUE 1.25; liquid cooling; $4.5B investment
-DAMAC Digital,Cikarang DC,Cikarang,Bekasi,West Java,Planned,,144,III,2300,2026,,AI-ready; part of 300 MW SEA strategy
-Digital Realty / Bersama Digital,CGK10,Central Jakarta,Jakarta,DKI Jakarta,Operational,5,,III,,2025,0,JV with Bersama Digital Infrastructure Asia
-Digital Realty / Bersama Digital,CGK11,Central Jakarta,Jakarta,DKI Jakarta,Planned,,32,III,,2026,,Campus expansion
-BDx Indonesia,CGK4 Jatiluhur,Jatiluhur,Purwakarta,West Java,Planned,,500,III,,2027,,500 MW renewable-powered AI campus
-Equinix / Astra International,JK1,Jakarta,Jakarta,DKI Jakarta,Operational,2.4,18,III,74,2024,0,"Phase 1 live: 550 cabinets / 2.4 MW; full design 18 MW / 1600 cabinets; source: kompas.id / Kompas.id May 2025"
-ST Telemedia GDC,STT Jakarta-2,Jakarta,Jakarta,DKI Jakarta,Under Construction,24,,III,,2025,,Ground broken
-IndoKeppel Data Centres,IKDC1,Bogor,Bogor,West Java,Under Construction,,,III,,2025,,7-hectare campus
-Gaw Capital / Sinar Primera,Batam Phase 1,Batam,Batam,Riau Islands,Operational,5.2,20,III,,2024,0,Phase 1 live; 20 MW planned
-DayOne / INA JV,Nongsa Digital Park,Batam,Batam,Riau Islands,Under Construction,,72,III,,2026,,JV with Indonesia Investment Authority
-Indosat-NVIDIA (Lintasarta),AI Factory (GPU Merdeka),Jakarta,Jakarta,DKI Jakarta,Operational,5,80,III,250,2024,1,"Phase 1 MW imputed: 80 kW/rack GPU density; 80 MW reserved for future phases; no Phase 1 MW publicly disclosed; source: CNBC / DCD / Lintasarta press releases"
-Tencent,Indonesia Expansion,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,500,2026,,Capacity expansion pledge Nov 2024
-Microsoft,Indonesia Central Cloud Region,Jakarta,Jakarta,DKI Jakarta,Under Construction,,,III,1700,2024-2028,,First cloud region in Indonesia; AI-ready
-Korea Investment Partners / Sinar Mas Land,JV Facilities,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,375,2025,,Part of $750M+ JV commitments
-Elitery Data Center,Elitery DC,South Jakarta,Jakarta,DKI Jakarta,Operational,0.7,,III,,Various,0,"700 kW critical power; Jl. Raya Pajajaran No.17; source: datacenterHawk"
-Moratelindo (NDC),NDC Jakarta,East Jakarta,Jakarta,DKI Jakarta,Operational,1,,III,,Various,0,"1 MW; Tier III; Jl. Jatinegara Barat No.44; network hub for 6-city NDC; source: datacentermap.com"
-Biznet,Biznet DC (Technovillage + MidPlaza),Cimanggis / Central Jakarta,Multiple,Multiple,Operational,7,,III,,Various,1,"Imputed: Technovillage ~6 MW typical operating load (4x2.5 MVA transformers; 2500 racks) + MidPlaza ~1 MW (700 sqm); source: PCplus.co.id Technovillage profile"
-Datacomm,Datacomm DC (HQ + Alam Sutera + Jababeka),Jakarta / Tangerang / Cikarang,Multiple,Multiple,Operational,2,,III,,Various,1,"Imputed: HQ (30 racks ~0.15 MW) + Alam Sutera (medium SME DC) + Jababeka TIA-942 Tier III; combined ~2 MW; no public MW disclosure"
-Pure Data Centres,Pure DC,Jakarta,Jakarta,DKI Jakarta,Operational,20,,III,,2019,0,"20 MW IT load; 20000 sqm; hyperscale; source: DCD / datacentermap.com / datacenternews.asia"
-SEAX Indonesia Pratama,SEAX DC (BSD Technopark),BSD City,South Tangerang,Banten,Operational,15,30,III,,2025,1,"Phase 1 completed Q4 2025; 30 MVA total campus; dual-phase 4-8 data halls; Phase 1 MW imputed as ~50% of campus total; source: SEAX press release / DCD"
-Oracle,Indonesia North Cloud Region (Batam),Nongsa Digital Park,Batam,Riau Islands,Operational,20,120,III,,2025,1,"Launched July 2025 as sole tenant of DayOne Nongsa Digital Park; DayOne plots support ≥120 MW; Phase 1 MW imputed; source: Bloomberg / Fintech News Indonesia / DCD"
-Metta DC,ID01 (Jababeka),Jababeka Industrial Estate,Bekasi,West Java,Operational,35,,III,,Various,0,"35 MW; 3000 racks; 3-story; 1.8 ha site; IIF IDR 629.8B loan; source: DCD / datacenterdynamics.com"
-K2 Strategic (K2 Data Centres / Sinar Mas Land JV),K2 JKT1,Kota Deltamas,Bekasi,West Java,Operational,15,58.8,III,,2024,1,"Phase 1 ready early 2024; 58.8 MW total at full build (4 buildings) confirmed; Phase 1 MW imputed as ~1/4 total (~15 MW); Tier III TCDD+TCCF; LEED Gold; source: K2/SML JV press release / DCD"
-Aslan Energy Capital,Aslan DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,,New entrant
-BW Digital,BW DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,,New entrant
-Triputra Group,Triputra DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,,New entrant
-LG Sinar Mas,LG SM DC,Jakarta,Jakarta,DKI Jakarta,Under Construction,,,III,,2025,,Joint venture facility
+operator,facility_name,location,city,province,status,capacity_mw,planned_capacity_mw,tier,investment_usd_million,year_operational,mw_imputed,investment_idr_trillion,planned_investment_idr_trillion,investment_imputed,notes
+DCI Indonesia,JK5,Cibitung,Bekasi,West Java,Operational,36,,IV,,2023,0,5.58,,1,"Tier IV; DCI benchmark $10M/MW × 36 MW = $360M = IDR 5.58T; imputed from DCI Deputy President stated $10M/MW cost"
+DCI Indonesia,JK6,Cibitung,Bekasi,West Java,Operational,36,,IV,,2024,0,5.58,,1,"Tier IV; DCI benchmark $10M/MW × 36 MW = $360M = IDR 5.58T; IDR 1T capex allocation for JK6+Surabaya phase; imputed"
+DCI Indonesia,H1 Campus,Cibitung,Bekasi,West Java,Under Construction,,73,IV,,2025,,,11.32,1,"Tier IV campus; 73 MW × $10M/MW = $730M = IDR 11.32T; imputed from DCI $10M/MW benchmark"
+DCI Indonesia,H2 Pertiwi Lestari (Phase 1),Cibitung,Bekasi,West Java,Under Construction,135,600,IV,,2026,,,1.75,0,"IDR 1.5–2T confirmed by DCII CEO Toto Sugiri (midpoint IDR 1.75T); JV with Anthoni Salim / Salim Group; Karawang campus; source: Kontan / thetechcapital.com"
+DCI Indonesia,H2-02,Cibitung,Bekasi,West Java,Planned,,30,IV,,2026,,,4.65,1,"Planned solar-powered; 30 MW × $10M/MW = $300M = IDR 4.65T; imputed from DCI Tier IV benchmark"
+Telkom Indonesia (NeutraDC),NeutraDC Portfolio (33 sites),Multiple,Multiple,Multiple,Operational,42,,III,,Various,0,2.60,,1,"42 MW across 33 legacy multi-city sites; $4M/MW avg for older distributed portfolio = $168M = IDR 2.60T; imputed (NeutraDC stake sale EV cited $1.5B = IDR 23.3T but includes future pipeline)"
+Telkom Indonesia (NeutraDC),Cikarang Expansion,Cikarang,Bekasi,West Java,Under Construction,,60,III,,2025,,,7.44,1,"60 MW × $8M/MW = $480M = IDR 7.44T; imputed from weighted-avg benchmark $6.5M/MW + hyperscale premium"
+NTT DATA,Jakarta 2 (JKT2),Jakarta,Jakarta,DKI Jakarta,Operational,9.4,,III,,2020,0,1.17,,1,"9.4 MW × $8M/MW = $75.2M = IDR 1.17T; imputed from NTT regional benchmark (JKT3 = $11.1M/MW full campus)"
+NTT DATA,Jakarta 3 (JKT3),Cikarang,Bekasi,West Java,Operational,15.2,45,III,500,2023,0,7.75,,0,"$500M confirmed for full 45 MW campus; IDR 7.75T; source: Jakarta Globe 'Japan's NTT invests $500M to build third data center in Indonesia'"
+NTT DATA,Jakarta 2 Annex (JKT2A),Jakarta,Jakarta,DKI Jakarta,Under Construction,12,,III,,2026,,,1.58,1,"12 MW × $8.5M/MW = $102M = IDR 1.58T; part of NTT $10B global 2023-2027 program; imputed"
+SpaceDC,ID01,Jakarta,Jakarta,DKI Jakarta,Operational,25.45,,III,,2022,0,2.76,,1,"25.45 MW × $7M/MW = $178M = IDR 2.76T; GIC-backed; no public investment disclosure; imputed"
+EdgeConneX,GTN Cikarang,Cikarang,Bekasi,West Java,Operational,7,90,III,,2022,0,0.76,,1,"Acquisition price undisclosed; 7 MW × $7M/MW = $49M = IDR 0.76T (older Tier III 2016 vintage); imputed"
+EdgeConneX,Jakarta Campus,Bekasi,Bekasi,West Java,Under Construction,30,200,III,,2025,,,6.26,0,"$403.8M sustainability-linked financing confirmed for up to 120 MW phase; IDR 6.26T; source: EdgeConneX press release / DCD"
+Princeton Digital Group,JC3,Jakarta,Jakarta,DKI Jakarta,Operational,120,,III,1000,2023,0,15.50,,0,"$1B investment for 120 MW campus; IDR 15.50T; source: PDG groundbreaking Nov 2025 press release"
+Princeton Digital Group,Cibitung Campus,Cibitung,Bekasi,West Java,Under Construction,22,,III,110,2025,,,1.71,0,"$110M confirmed; IDR 1.71T; IDR 1.7T green loan confirmed; source: PDG press release / DCD"
+Princeton Digital Group,Batam Campus,Batam,Batam,Riau Islands,Planned,,96,III,,2026,,,10.42,1,"96 MW × $7M/MW = $672M = IDR 10.42T; Batam lower cost vs Jakarta; imputed"
+Digital Edge (Indonet),EDGE1,South Jakarta,Jakarta,DKI Jakarta,Operational,15,,III,,2021,0,2.33,,1,"$165M Digital Edge bought 59% of Indonet (DC + ISP biz); DC-only EDGE1 portion estimated $150M = IDR 2.33T; imputed"
+Digital Edge (Indonet),EDGE2,South Jakarta,Jakarta,DKI Jakarta,Operational,14,23,III,325,2026,0,5.04,,0,"$325M credit facility from BCA confirmed; IDR 5.04T; source: DCD Oct 2025"
+Digital Edge (Indonet),CGK Campus,GIIC Bekasi,Bekasi,West Java,Under Construction,,500,III,4500,2026-2027,,,69.75,0,"$4.5B confirmed; IDR 69.75T; scalable to 1 GW; PUE 1.25; liquid cooling; source: Digital Edge press release"
+DAMAC Digital,Cikarang DC,Cikarang,Bekasi,West Java,Planned,,144,III,2300,2026,,,35.65,0,"$2.3B confirmed; IDR 35.65T; AI-ready; source: DAMAC press release / DCD"
+Digital Realty / Bersama Digital,CGK10,Central Jakarta,Jakarta,DKI Jakarta,Operational,5,,III,,2025,0,0.93,,1,"Digital Realty paid $100M for 50% of JV (CGK10+CGK11+land); total JV = ~$200M; CGK10 portion ~$60M = IDR 0.93T; imputed"
+Digital Realty / Bersama Digital,CGK11,Central Jakarta,Jakarta,DKI Jakarta,Planned,,32,III,,2026,,,2.17,1,"Remainder of $200M DLR JV value; CGK11 (newer 32 MW) ~$140M = IDR 2.17T; imputed from JV deal allocation"
+BDx Indonesia,CGK4 Jatiluhur,Jatiluhur,Purwakarta,West Java,Planned,,500,III,,2027,,,77.50,1,"500 MW × $10M/MW = $5,000M = IDR 77.5T; BDx CGK3A reference = $10M/MW; JV with Indosat+Lintasarta; imputed"
+Equinix / Astra International,JK1,Jakarta,Jakarta,DKI Jakarta,Operational,2.4,18,III,74,2024,0,1.15,,0,"$74M confirmed; IDR 1.15T; Phase 1 live 2.4 MW / 550 cabinets; full design 18 MW; source: Equinix press release / Kompas.id"
+ST Telemedia GDC,STT Jakarta-2,Jakarta,Jakarta,DKI Jakarta,Under Construction,24,,III,,2025,,,3.72,1,"24 MW × $10M/MW = $240M = IDR 3.72T; JV with Triputra + Temasek; GIIC Bekasi campus; imputed"
+IndoKeppel Data Centres,IKDC1,Bogor,Bogor,West Java,Under Construction,,,III,,2025,,,6.59,1,"50 MW campus × $8.5M/MW = $425M = IDR 6.59T; Keppel + Salim Group JV; 7-ha campus; imputed"
+Gaw Capital / Sinar Primera,Batam Phase 1,Batam,Batam,Riau Islands,Operational,5.2,20,III,,2024,0,0.48,,1,"5.2 MW × $6M/MW = $31.2M = IDR 0.48T; Batam SEZ lower cost; investment undisclosed; imputed"
+DayOne / INA JV,Nongsa Digital Park,Batam,Batam,Riau Islands,Under Construction,,72,III,,2026,,,6.70,0,"IDR 6.7T = $412M confirmed; DBS + UOB loan facility (largest IDR DC loan ever); source: UOB/DBS press release"
+Indosat-NVIDIA (Lintasarta),AI Factory (GPU Merdeka),Jakarta,Jakarta,DKI Jakarta,Operational,5,80,III,250,2024,1,3.88,,0,"$250M confirmed; IDR 3.88T; launched Oct 2024; H100 GPU cluster; source: CNBC / DCD"
+Tencent,Indonesia Expansion,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,500,2026,,,7.75,0,"$500M confirmed; IDR 7.75T; source: Tencent press release Nov 2024"
+Microsoft,Indonesia Central Cloud Region,Jakarta,Jakarta,DKI Jakarta,Under Construction,,,III,1700,2024-2028,,,26.35,0,"$1.7B confirmed; IDR 26.35T; first cloud region in Indonesia; AI-ready; source: Microsoft press release"
+Korea Investment Partners / Sinar Mas Land,JV Facilities,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,375,2025,,,5.81,0,"$375M confirmed; IDR 5.81T; part of $750M+ JV commitments; source: press releases"
+Elitery Data Center,Elitery DC,South Jakarta,Jakarta,DKI Jakarta,Operational,0.7,,III,,Various,0,0.06,,1,"0.7 MW × $5M/MW = $3.5M = IDR 0.06T; small legacy colocation; no public investment; imputed"
+Moratelindo (NDC),NDC Jakarta,East Jakarta,Jakarta,DKI Jakarta,Operational,1,,III,,Various,0,0.08,,1,"1 MW × $5M/MW = $5M = IDR 0.08T; older carrier-neutral exchange; imputed"
+Biznet,Biznet DC (Technovillage + MidPlaza),Cimanggis / Central Jakarta,Multiple,Multiple,Operational,7,,III,,Various,1,0.65,,1,"Technovillage (6 MW) + MidPlaza: 7 MW × $6M/MW (older 2012 vintage) = $42M = IDR 0.65T; imputed"
+Datacomm,Datacomm DC (HQ + Alam Sutera + Jababeka),Jakarta / Tangerang / Cikarang,Multiple,Multiple,Operational,2,,III,,Various,1,0.16,,1,"2 MW × $5M/MW = $10M = IDR 0.16T; 3 small-medium facilities; imputed"
+Pure Data Centres,Pure DC,Jakarta,Jakarta,DKI Jakarta,Operational,20,,III,,2019,0,2.17,,1,"20 MW × $7M/MW = $140M = IDR 2.17T; LOGOS + Oaktree JV; no investment disclosed; imputed"
+SEAX Indonesia Pratama,SEAX DC (BSD Technopark),BSD City,South Tangerang,Banten,Operational,15,30,III,,2025,1,1.40,,0,"IDR 1.4T confirmed; total investment for BSD Technopark campus; source: SEAX press release / DCD"
+Oracle,Indonesia North Cloud Region (Batam),Nongsa Digital Park,Batam,Riau Islands,Operational,20,120,III,,2025,1,3.10,,1,"Oracle leases from DayOne Nongsa; proportional infra cost = 20/120 × IDR 18.6T (DayOne full 120 MW at $10M/MW) = IDR 3.10T; imputed"
+Metta DC,ID01 (Jababeka),Jababeka Industrial Estate,Bekasi,West Java,Operational,35,,III,,Various,0,1.50,,1,"IIF loan IDR 629.8B for Phase 1 (10 MW) confirmed; total 35 MW estimated IDR 1.5T (Phase 1 IDR ~0.9T + subsequent phases); partially evidence-based; imputed for full 35 MW"
+K2 Strategic (K2 Data Centres / Sinar Mas Land JV),K2 JKT1,Kota Deltamas,Bekasi,West Java,Operational,15,58.8,III,,2024,1,1.51,5.92,1,"Phase 1 (15 MW): 15 × $6.5M/MW = $97.5M = IDR 1.51T (operational); full 58.8 MW campus: $382M = IDR 5.92T (planned_investment); imputed from weighted avg"
+Aslan Energy Capital,Aslan DC,East Jakarta,Jakarta,DKI Jakarta,Planned,,40,IV,,2027,,,6.20,1,"40 MW Tier IV at JIEP East Jakarta; 40 × $10M/MW = $400M = IDR 6.20T; 120MWh BESS; Q4 2027 target; source: Aslan/JIEP press release; MW and investment imputed"
+BW Digital,BW DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,,,3.10,1,"No capacity disclosed; estimated $200M = IDR 3.10T; new hyperscale entrant; imputed"
+Triputra Group,Triputra DC,Jakarta,Jakarta,DKI Jakarta,Planned,,,III,,2026,,,2.33,1,"No capacity disclosed; estimated $150M = IDR 2.33T; local conglomerate; imputed"
+LG Sinar Mas,LG SM DC (SMX01),Jakarta CBD,Jakarta,DKI Jakarta,Under Construction,18,,III,,2026,300,,4.65,0,"$300M confirmed (IDR 4.6–4.9T; using IDR 4.65T midpoint); 18 MW initial; LG CNS + SM+ JV + KIRA; source: Sinar Mas press release / DCD / Jakarta Post"
