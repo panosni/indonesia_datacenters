@@ -1,0 +1,289 @@
+\documentclass[11pt,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{array,float,booktabs,textcomp,multirow,amsmath,amssymb}
+\usepackage{appendix,graphicx,setspace,eurosym}
+\usepackage[round]{natbib}
+\onehalfspacing
+\interfootnotelinepenalty=10000
+\clubpenalty=10000
+\widowpenalty=10000
+\hyphenpenalty=9000
+\exhyphenpenalty=10000
+\sloppy
+\usepackage{nicefrac,rotating}
+\usepackage{caption}
+\captionsetup[table]{labelfont={bf},name={Table},labelsep=quad}
+\usepackage{xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=black}
+\usepackage{threeparttable,tabularx,longtable}
+\pagestyle{plain}
+\makeatother
+
+\begin{document}
+
+\vspace{-2cm}
+\title{\textbf{Fiscal Cost of Indonesia's Data Centre Tax Incentive Regime}}
+\author{}
+\date{March 2025}
+\maketitle
+
+\subsection*{Overview}
+Indonesia's data centre market has attracted IDR~385.8~trillion (USD~24.4~billion) in identified investment across 49~facilities, encompassing 3475~MW of capacity (912~MW operational, 2563~MW pipeline). Three fiscal instruments apply: a CIT holiday of up to 20~years (PMK-130/2020); a post-holiday investment allowance of 30\% of capex under GR~No.~45/2019; and VAT plus import duty exemptions for Batam Nongsa Digital Park SEZ operators. Total cumulative fiscal cost is estimated at \textbf{IDR~130.659~trillion (USD~8.27~billion)}, equivalent to \textbf{0.590\%~of 2024 GDP} and 19.5\% of the annual government education budget.
+
+\subsection*{Table~1 \texorpdfstring{---}{--} Annual and Cumulative Fiscal Cost by Instrument}
+
+Taxable income proxied at 12\% ROIC. CIT forgone: 22\% for non-GMT operators (\textit{n}~=~28), 7\% net for GMT-subject MNEs (\textit{n}~=~21) after the QDMTT floor (PMK-136/2024, effective 1~Jan 2025). Post-holiday investment allowance applies to non-GMT entities only; QDMTT recaptures all saving for GMT operators. SEZ VAT and import duty are one-time costs at construction.
+
+\begin{table}[H]
+\centering
+\caption{Annual and Cumulative Fiscal Cost by Instrument (IDR~Trillion; 2024~GDP = IDR~22{,}139T)}
+\label{tab:timeline}
+\begin{threeparttable}
+\small
+\begin{tabular}{l r r r r r r}
+\toprule
+\textbf{Year} & \textbf{CIT Holiday} & \textbf{Super Ded.$^{a}$} & \textbf{Annual Total} & \textbf{\% GDP} & \textbf{Cum.\ Total} & \textbf{Cum.\ \% GDP} \\
+\midrule
+  2025 & 4.024 & --- & 4.024 & 0.018\% & 5.001 & 0.023\% \\
+  2027 & 7.642 & 0.012 & 7.654 & 0.035\% & 17.927 & 0.081\% \\
+  2030 & 7.366 & 0.090 & 7.456 & 0.034\% & 40.530 & 0.183\% \\
+  2035 & 5.695 & 0.395 & 6.090 & 0.028\% & 74.311 & 0.336\% \\
+  2040 & 4.186 & 0.483 & 4.669 & 0.021\% & 99.899 & 0.451\% \\
+  2045 & 2.345 & 0.384 & 2.729 & 0.012\% & 119.782 & 0.541\% \\
+  \midrule
+  \textit{Cumulative (all periods)} & 118.705 & 10.977 & --- & --- & \textbf{130.659}$^{b}$ & 0.590\% \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item[$a$] Post-holiday 5-year window: 2~years at 11\% CIT + 3~years at 22\% CIT. Zero net cost for GMT entities (QDMTT recapture). Zero during holiday (double-dipping prohibited, PMK-153/2020 Art.~7).
+\item[$b$] Includes SEZ VAT (IDR~0.796T) and import duty (IDR~0.181T), one-time at construction. GDP: BPS 2024. Education: APBN 2024 (IDR~670T). Rate: IDR~15{,}800/USD.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+\subsection*{Table~2 \texorpdfstring{---}{--} Policy Scenarios}
+\textbf{Scenario~A}: expansion to 2{,}800~MW operational by 2030 (+1888~MW from current 912~MW operational), requiring IDR~209.5T at IDR~111B/MW; GMT/non-GMT split 43\%/57\%; 10-year holiday. \textbf{Scenario~B}: VAT and import duty extended to all operators (35\% equipment share, IDR~385.8T total investment).
+
+\begin{table}[H]
+\centering
+\caption{Fiscal Cost Under Alternative Scenarios}
+\label{tab:scenarios}
+\begin{threeparttable}
+\small
+\begin{tabular}{l r r r r r r r}
+\toprule
+\textbf{Scenario} & \textbf{MW} & \textbf{Inv.} & \textbf{CIT} & \textbf{SD} & \textbf{VAT+Duty} & \textbf{Total (IDR~T)} & \textbf{\% GDP} \\
+\midrule
+  Baseline & 3475 & 385.8 & 118.705 & 10.977 & 0.977 & \textbf{130.659} & 0.590\% \\
+  A: 2{,}800\,MW by 2030 & +1888 & +209.5 & +42.001 & +5.964 & --- & \textbf{+}47.965 & +0.217\% \\
+  \quad\textit{Scenario A total} & 5363 & 595.4 & 160.706 & 16.941 & 0.977 & \textbf{178.624} & 0.807\% \\
+  \midrule
+  B: Universal VAT & 3475 & 385.8 & 118.705 & 10.977 & 18.230 & \textbf{147.912} & 0.668\% \\
+  Combined A\,+\,B & 5363 & 595.4 & 160.706 & 16.941 & 18.230 & \textbf{195.877} & 0.885\% \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item CIT/SD/VAT+Duty all in IDR~T (cumulative). Scenario~A assumes no new SEZ concessions. Scenario~B incremental: IDR~17.253T (VAT~14.854T + duty~3.376T -- existing SEZ relief).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+\subsection*{Table~3 \texorpdfstring{---}{--} Tax Incentive Cost by Data Centre}
+
+\begin{table}[H]
+\centering
+\caption{Fiscal Cost of Tax Incentives by Data Centre (IDR~Trillion)}
+\label{tab:perdc}
+\begin{threeparttable}
+\scriptsize
+\begin{tabular}{l l c r r r r r}
+\toprule
+\textbf{Operator} & \textbf{Facility} & \textbf{GMT} & \textbf{Hol.} & \textbf{Inv.} & \textbf{Ann.\ CIT} & \textbf{Cum.\ CIT} & \textbf{SD} \\
+\midrule
+  BDx Indonesia & CGK4 Jatiluhur & No & 20 & 77.50 & 2.046 & 40.920 & 3.410 \\
+  Digital Edge (Indonet) & CGK Campus & No & 20 & 69.75 & 1.841 & 36.828 & 3.069 \\
+  Princeton Digital Group & JC3 & No & 15 & 15.50 & 0.409 & 6.138 & 0.682 \\
+  DAMAC Digital & Cikarang DC & Yes & 20 & 35.65 & 0.299 & 5.989 & --- \\
+  Princeton Digital Group & Batam Campus & No & 10 & 10.42 & 0.275 & 2.751 & 0.458 \\
+  DCI Indonesia & H1 Campus & No & 10 & 11.32 & 0.299 & 2.988 & 0.498 \\
+  Microsoft & Indonesia Central  & Yes & 15 & 26.35 & 0.221 & 3.320 & --- \\
+  DayOne / INA JV & Nongsa Digital Par & No & 10 & 6.70 & 0.177 & 1.769 & 0.295 \\
+  Aslan Energy Capital & Aslan DC & No & 10 & 6.20 & 0.164 & 1.637 & 0.273 \\
+  DCI Indonesia & JK5 & No & 10 & 5.58 & 0.147 & 1.473 & 0.246 \\
+  DCI Indonesia & JK6 & No & 10 & 5.58 & 0.147 & 1.473 & 0.246 \\
+  Digital Edge (Indonet) & EDGE2 & No & 10 & 5.04 & 0.133 & 1.331 & 0.222 \\
+  DCI Indonesia & H2-02 & No & 7 & 4.65 & 0.123 & 0.859 & 0.205 \\
+  Korea Investment / Sinar Mas (PT K & KMG Jakarta (AI Da & No & 7 & 4.65 & 0.123 & 0.859 & 0.205 \\
+  BW Digital & BW DC & No & 7 & 3.10 & 0.082 & 0.573 & 0.136 \\
+  DCI Indonesia & E1 Data Center & No & 7 & 3.10 & 0.082 & 0.573 & 0.136 \\
+  Bitera (MMS Group Indonesia) & Bitera Jakarta & No & 7 & 3.10 & 0.082 & 0.573 & 0.136 \\
+  NTT DATA & Jakarta 3 (JKT3) & Yes & 10 & 7.75 & 0.065 & 0.651 & --- \\
+  Tencent & Indonesia Expansio & Yes & 10 & 7.75 & 0.065 & 0.651 & --- \\
+  K2 Strategic (K2 Data Centres / Si & K2 Karawang Campus & Yes & 10 & 7.75 & 0.065 & 0.651 & --- \\
+  SpaceDC & ID01 & No & 7 & 2.76 & 0.073 & 0.510 & 0.121 \\
+  Telkom Indonesia (NeutraDC) & Cikarang Expansion & Yes & 10 & 7.44 & 0.062 & 0.625 & --- \\
+  IndoKeppel Data Centres & IKDC1 & Yes & 10 & 6.59 & 0.055 & 0.554 & --- \\
+  Digital Edge (Indonet) & EDGE1 & No & 7 & 2.33 & 0.062 & 0.431 & 0.103 \\
+  Triputra Group & Triputra DC & No & 7 & 2.33 & 0.062 & 0.431 & 0.103 \\
+  EdgeConneX & Jakarta Campus & Yes & 10 & 6.26 & 0.053 & 0.526 & --- \\
+  K2 Strategic (K2 Data Centres / Si & K2 JKT1 & Yes & 10 & 5.92 & 0.050 & 0.497 & --- \\
+  Pure Data Centres & Pure DC & No & 7 & 2.17 & 0.057 & 0.401 & 0.095 \\
+  DCI Indonesia & H2 Pertiwi Lestari & No & 7 & 1.75 & 0.046 & 0.323 & 0.077 \\
+  Princeton Digital Group & Cibitung Campus & No & 7 & 1.71 & 0.045 & 0.316 & 0.076 \\
+  Metta DC & ID01 (Jababeka) & No & 7 & 1.50 & 0.040 & 0.277 & 0.066 \\
+  Oracle & Indonesia North Cl & Yes & 7 & 3.10 & 0.026 & 0.182 & --- \\
+  SEAX Indonesia Pratama & SEAX DC (BSD Techn & No & 7 & 1.40 & 0.037 & 0.259 & 0.062 \\
+  Indosat-NVIDIA (Lintasarta) & AI Factory (GPU Me & Yes & 7 & 3.88 & 0.033 & 0.228 & --- \\
+  ST Telemedia GDC & STT Jakarta-2 & Yes & 7 & 3.72 & 0.031 & 0.219 & --- \\
+  Digital Realty / Bersama Digital ( & JBT1 (Jakarta Bara & Yes & 7 & 3.10 & 0.026 & 0.182 & --- \\
+  Telkom Indonesia (NeutraDC) & NeutraDC Portfolio & Yes & 7 & 2.60 & 0.022 & 0.153 & --- \\
+  Digital Realty / Bersama Digital ( & CGK11 & Yes & 7 & 2.17 & 0.018 & 0.128 & --- \\
+  Biznet & Biznet DC (Technov & No & 5 & 0.65 & 0.017 & 0.086 & 0.029 \\
+  NTT DATA & Jakarta 2 Annex (J & Yes & 7 & 1.58 & 0.013 & 0.093 & --- \\
+  Gaw Capital / Sinar Primera & Batam Phase 1 & No & 5 & 0.48 & 0.006 & 0.032 & 0.021 \\
+  NTT DATA & Jakarta 2 (JKT2) & Yes & 7 & 1.17 & 0.010 & 0.069 & --- \\
+  Equinix / Astra International & JK1 & Yes & 7 & 1.15 & 0.010 & 0.068 & --- \\
+  Digital Realty / Bersama Digital ( & CGK10 & Yes & 5 & 0.93 & 0.008 & 0.039 & --- \\
+  EdgeConneX & GTN Cikarang & Yes & 5 & 0.76 & 0.006 & 0.032 & --- \\
+  NTT DATA & Jakarta 1 (JKT1) & Yes & 5 & 0.62 & 0.005 & 0.026 & --- \\
+  Datacomm & Datacomm DC (HQ +  & No & 5 & 0.16 & 0.002 & 0.011 & 0.007 \\
+  Elitery Data Center & Elitery DC & No & 0 & 0.06 & 0.000 & 0.000 & --- \\
+  Moratelindo (NDC) & NDC Jakarta & No & 0 & 0.08 & 0.000 & 0.000 & --- \\
+  \midrule
+  \textbf{Total} & & & & \textbf{385.81} & \textbf{7.720} & \textbf{118.705} & \textbf{10.977} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\scriptsize
+\item Cum.\ CIT = CIT forgone over full holiday. SD = cumulative post-holiday investment allowance CIT cost (non-GMT only). Elitery/Moratelindo below IDR~100B threshold (no holiday). Galaxis excluded (undisclosed investment). CIT forfeited: 22\% non-GMT; 7\% GMT; 11\% for 50\%-reduction tier.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\newpage
+\begin{appendices}
+
+\section{Data Centre Inventory}
+\label{app:inventory}
+
+\begin{table}[H]
+\centering
+\caption{Indonesia Data Centre Inventory --- Key Parameters}
+\begin{threeparttable}
+\scriptsize
+\begin{tabular}{l l l r r l c c}
+\toprule
+\textbf{Operator} & \textbf{Facility} & \textbf{Status} & \textbf{MW} & \textbf{Inv.\ (IDR~T)} & \textbf{Tier} & \textbf{GMT} & \textbf{SEZ} \\
+\midrule
+  BDx Indonesia & CGK4 Jatiluhur & Planned & 500 & 77.50 & Above 30T & No & No \\
+  Digital Edge (Indonet) & CGK Campus & Under Construc & 500 & 69.75 & Above 30T & No & No \\
+  DAMAC Digital & Cikarang DC & Planned & 144 & 35.65 & Above 30T & Yes & No \\
+  Microsoft & Indonesia Central Cl & Under Construc & 46 & 26.35 & 15T--30T & Yes & No \\
+  Princeton Digital Group & JC3 & Operational & 120 & 15.50 & 15T--30T & No & No \\
+  DCI Indonesia & H1 Campus & Under Construc & 73 & 11.32 & 5T--15T & No & No \\
+  Princeton Digital Group & Batam Campus & Planned & 96 & 10.42 & 5T--15T & No & Yes \\
+  NTT DATA & Jakarta 3 (JKT3) & Operational & 45 & 7.75 & 5T--15T & Yes & No \\
+  Tencent & Indonesia Expansion & Planned & 14 & 7.75 & 5T--15T & Yes & No \\
+  K2 Strategic (K2 Data Centres  & K2 Karawang Campus & Planned & 59 & 7.75 & 5T--15T & Yes & No \\
+  Telkom Indonesia (NeutraDC) & Cikarang Expansion & Under Construc & 60 & 7.44 & 5T--15T & Yes & No \\
+  DayOne / INA JV & Nongsa Digital Park & Under Construc & 72 & 6.70 & 5T--15T & No & Yes \\
+  IndoKeppel Data Centres & IKDC1 & Under Construc & 12 & 6.59 & 5T--15T & Yes & No \\
+  EdgeConneX & Jakarta Campus & Under Construc & 200 & 6.26 & 5T--15T & Yes & No \\
+  Aslan Energy Capital & Aslan DC & Planned & 40 & 6.20 & 5T--15T & No & No \\
+  K2 Strategic (K2 Data Centres  & K2 JKT1 & Operational & 59 & 5.92 & 5T--15T & Yes & No \\
+  DCI Indonesia & JK5 & Operational & 36 & 5.58 & 5T--15T & No & No \\
+  DCI Indonesia & JK6 & Operational & 36 & 5.58 & 5T--15T & No & No \\
+  Digital Edge (Indonet) & EDGE2 & Operational & 23 & 5.04 & 5T--15T & No & No \\
+  DCI Indonesia & H2-02 & Planned & 30 & 4.65 & 1T--5T & No & No \\
+  Korea Investment / Sinar Mas ( & KMG Jakarta (AI Data & Under Construc & 18 & 4.65 & 1T--5T & No & No \\
+  Indosat-NVIDIA (Lintasarta) & AI Factory (GPU Merd & Operational & 80 & 3.88 & 1T--5T & Yes & No \\
+  ST Telemedia GDC & STT Jakarta-2 & Under Construc & 24 & 3.72 & 1T--5T & Yes & No \\
+  BW Digital & BW DC & Planned & 6 & 3.10 & 1T--5T & No & No \\
+  DCI Indonesia & E1 Data Center & Operational & 18 & 3.10 & 1T--5T & No & No \\
+  Bitera (MMS Group Indonesia) & Bitera Jakarta & Operational & 20 & 3.10 & 1T--5T & No & No \\
+  Oracle & Indonesia North Clou & Operational & 120 & 3.10 & 1T--5T & Yes & Yes \\
+  Digital Realty / Bersama Digit & JBT1 (Jakarta Barat  & Operational & 30 & 3.10 & 1T--5T & Yes & No \\
+  SpaceDC & ID01 & Operational & 25 & 2.76 & 1T--5T & No & No \\
+  Telkom Indonesia (NeutraDC) & NeutraDC Portfolio ( & Operational & 42 & 2.60 & 1T--5T & Yes & No \\
+  Digital Edge (Indonet) & EDGE1 & Operational & 15 & 2.33 & 1T--5T & No & No \\
+  Triputra Group & Triputra DC & Planned & 4 & 2.33 & 1T--5T & No & No \\
+  Pure Data Centres & Pure DC & Operational & 20 & 2.17 & 1T--5T & No & No \\
+  Digital Realty / Bersama Digit & CGK11 & Planned & 32 & 2.17 & 1T--5T & Yes & No \\
+  DCI Indonesia & H2 Pertiwi Lestari ( & Under Construc & 600 & 1.75 & 1T--5T & No & No \\
+  Princeton Digital Group & Cibitung Campus & Under Construc & 22 & 1.71 & 1T--5T & No & No \\
+  NTT DATA & Jakarta 2 Annex (JKT & Under Construc & 12 & 1.58 & 1T--5T & Yes & No \\
+  Metta DC & ID01 (Jababeka) & Operational & 35 & 1.50 & 1T--5T & No & No \\
+  SEAX Indonesia Pratama & SEAX DC (BSD Technop & Operational & 30 & 1.40 & 1T--5T & No & No \\
+  NTT DATA & Jakarta 2 (JKT2) & Operational & 9 & 1.17 & 1T--5T & Yes & No \\
+  Equinix / Astra International & JK1 & Operational & 18 & 1.15 & 1T--5T & Yes & No \\
+  Digital Realty / Bersama Digit & CGK10 & Operational & 5 & 0.93 & 500B--1T & Yes & No \\
+  EdgeConneX & GTN Cikarang & Operational & 90 & 0.76 & 500B--1T & Yes & No \\
+  Biznet & Biznet DC (Technovil & Operational & 7 & 0.65 & 500B--1T & No & No \\
+  NTT DATA & Jakarta 1 (JKT1) & Operational & 5 & 0.62 & 500B--1T & Yes & No \\
+  Gaw Capital / Sinar Primera & Batam Phase 1 & Operational & 20 & 0.48 & 100B--500B & No & Yes \\
+  Datacomm & Datacomm DC (HQ + Al & Operational & 2 & 0.16 & 100B--500B & No & No \\
+  Moratelindo (NDC) & NDC Jakarta & Operational & 1 & 0.08 & Below 100B & No & No \\
+  Elitery Data Center & Elitery DC & Operational & 1 & 0.06 & Below 100B & No & No \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\scriptsize
+\item MW = planned full capacity. Investment = planned investment where available. Galaxis excluded.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\section{Modelling Assumptions}
+\label{app:assumptions}
+
+\begin{table}[H]
+\centering
+\caption{Key Modelling Assumptions}
+\begin{threeparttable}
+\small
+\begin{tabularx}{\textwidth}{l X r}
+\toprule
+\textbf{Parameter} & \textbf{Rationale} & \textbf{Value} \\
+\midrule
+\multicolumn{3}{l}{\textit{Financial}} \\[2pt]
+ROIC & DCI Indonesia (IDX: DCII) 2023 ROIC 14--16\%; global DC sector 8--15\% & 12\% \\
+Exchange rate & Bank Indonesia 2024 annual average & IDR~15{,}800/USD \\[4pt]
+\multicolumn{3}{l}{\textit{CIT holiday}} \\[2pt]
+Non-GMT forgone & No QDMTT floor; full statutory CIT rate & 22\% \\
+GMT forgone & Net of 15\% QDMTT floor (PMK-136/2024, effective 1~Jan~2025) & 7\% \\
+50\%-reduction tier & IDR~100B--500B investment bracket & 11\% \\
+Holiday duration & $<$IDR~100B: 0~yr; 100B--500B: 5~yr (50\%); 500B--1T: 5~yr; 1T--5T: 7~yr; 5T--15T: 10~yr; 15T--30T: 15~yr; $>$30T: 20~yr & See tier \\[4pt]
+\multicolumn{3}{l}{\textit{Super deduction (GR~45/2019)}} \\[2pt]
+Investment allowance & 5\%/yr $\times$ 6~yr = 30\% cumulative & 5\%/yr \\
+Concurrency & PMK-153/2020 Art.~7: prohibited during CIT holiday & Zero during holiday \\
+GMT post-holiday & QDMTT recaptures all base-erosion CIT saving & Zero net cost \\
+Post-holiday window & 2~yr at 11\% (transition) + 3~yr at 22\% (full) & 5 years \\[4pt]
+\multicolumn{3}{l}{\textit{SEZ incentives}} \\[2pt]
+Equipment share & Capital equipment as share of total capex & 35\% \\
+VAT rate & UU No.~7/2021 & 11\% \\
+Import duty & Blended rate, IT and electrical equipment & 2.5\% \\[4pt]
+\multicolumn{3}{l}{\textit{Scenarios}} \\[2pt]
+Scenario~A: benchmark & Blended database ratio & IDR~111B/MW \\
+Scenario~A: GMT/non-GMT & Mirrors current database & 42.9\%/57.1\% \\
+Scenario~A: holiday & New entrants & 10~yr \\
+Scenario~B: VAT base & 35\% of all investment & IDR~135.0T \\
+[4pt]
+\multicolumn{3}{l}{\textit{Macroeconomic references}} \\[2pt]
+GDP 2024 & BPS preliminary estimate & IDR~22{,}139T \\
+Education budget & APBN 2024 & IDR~670T \\
+\bottomrule
+\end{tabularx}
+\begin{tablenotes}
+\small
+\item \textit{Sensitivity:} $\pm$3\,pp ROIC alters annual CIT by $\approx$IDR~$\pm$0.6T. $\pm$5\,pp equipment share alters SEZ costs by $\approx$IDR~$\pm$0.1T. Treating pre-2025 holiday years for GMT operators at full 22\% raises total cost by $\approx$IDR~8--10T.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\end{appendices}
+\end{document}
