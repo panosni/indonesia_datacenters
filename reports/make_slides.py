@@ -1,5 +1,5 @@
 """
-Generate fiscal_slides.pptx — 3 slides matching the LaTeX Beamer deck.
+Generate fiscal_slides.pptx — 4 slides matching the LaTeX Beamer deck.
 Run: python reports/make_slides.py
 """
 
@@ -192,7 +192,67 @@ for r, row_data in enumerate(tbl2_data):
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SLIDE 2 — TIER TABLE
+# SLIDE 2 — REVENUE LOSS TABLE
+# ══════════════════════════════════════════════════════════════════════════════
+sl2 = prs.slides.add_slide(blank_layout)
+header_bar(sl2, "Government Revenue Foregone — Annual Cost & 20-Year Projection")
+
+rev_data = [
+    ["Incentive",                  "Annual Cost (IDR T)", "% of GDP", "20-Year Total (IDR T)", "Duration"],
+    ["Tax Holiday (CIT)",          "7.613",               "0.034%",   "118.234",               "Up to 20 yrs"],
+    ["Super Deduction (PP 78)",    "3.174",               "0.014%",   "19.044",                "6 yrs post-holiday"],
+    ["SEZ VAT Exemption",          "0.265",               "0.001%",   "0.796",                 "One-off (3-yr build)"],
+    ["Grand Total",                "11.052",              "0.050%",   "138.074",               "---"],
+]
+
+rev_n_rows = len(rev_data)
+rev_n_cols = 5
+rev_tbl_l  = Inches(0.4)
+rev_tbl_t  = Inches(1.1)
+rev_tbl_w  = SLIDE_W - Inches(0.8)
+rev_tbl_h  = Inches(2.8)
+
+rev_col_pcts = [0.30, 0.17, 0.12, 0.22, 0.19]
+rev_col_widths = [int(rev_tbl_w * p) for p in rev_col_pcts]
+rev_col_widths[-1] = int(rev_tbl_w) - sum(rev_col_widths[:-1])
+
+t_rev = sl2.shapes.add_table(rev_n_rows, rev_n_cols,
+                              rev_tbl_l, rev_tbl_t,
+                              int(rev_tbl_w), int(rev_tbl_h)).table
+for c, w in enumerate(rev_col_widths):
+    t_rev.columns[c].width = w
+
+for r, row_data in enumerate(rev_data):
+    is_hdr  = (r == 0)
+    is_foot = (r == rev_n_rows - 1)
+    if is_hdr or is_foot:
+        bg, fg = NAVY, WHITE
+    elif r % 2 == 0:
+        bg, fg = LGRAY, BLACK
+    else:
+        bg, fg = WHITE, BLACK
+    for c, val in enumerate(row_data):
+        align = PP_ALIGN.LEFT if c == 0 else PP_ALIGN.CENTER
+        table_cell(t_rev, r, c, val,
+                   font_size=10, bold=(is_hdr or is_foot),
+                   fg=fg, bg=bg, align=align)
+
+# Footnotes
+fn_top = Inches(4.15)
+add_textbox(sl2, rev_tbl_l, fn_top, rev_tbl_w * 0.5, Inches(0.65),
+            "Annual cost = sum across all facilities of\n"
+            "(investment \u00d7 12% \u00d7 CIT-forfeited rate).\n"
+            "Tax Holiday run-rate = all active/committed holidays.",
+            font_size=8, color=NAVY)
+add_textbox(sl2, rev_tbl_l + rev_tbl_w * 0.52, fn_top, rev_tbl_w * 0.48, Inches(0.65),
+            "Indonesia 2024 GDP = IDR 22,139T (BPS).\n"
+            "20-year totals cover full contractual periods,\n"
+            "not a uniform 20-year stream.",
+            font_size=8, color=NAVY)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SLIDE 3 — TIER TABLE
 # ══════════════════════════════════════════════════════════════════════════════
 sl2 = prs.slides.add_slide(blank_layout)
 header_bar(sl2, "Fiscal Cost by Investment Tier")
@@ -248,7 +308,7 @@ add_textbox(sl2, tbl_l, Inches(6.85), tbl_w, Inches(0.35),
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SLIDE 3 — ASSUMPTIONS
+# SLIDE 4 — ASSUMPTIONS
 # ══════════════════════════════════════════════════════════════════════════════
 sl3 = prs.slides.add_slide(blank_layout)
 header_bar(sl3, "Key Assumptions")
