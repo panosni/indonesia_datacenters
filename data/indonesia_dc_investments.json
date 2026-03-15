@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Indonesia Data Center Database",
-    "last_updated": "2026-03-11",
+    "last_updated": "2026-03-15",
     "sources": [
       "Arizton Advisory & Intelligence",
       "Mordor Intelligence",
@@ -9,9 +9,18 @@
       "DataCenterMap.com",
       "Company press releases and filings",
       "Jakarta Globe",
-      "GlobeNewsWire"
+      "GlobeNewsWire",
+      "Data Center Dynamics",
+      "NTT DATA newsroom",
+      "DBS / UOB newsroom",
+      "Uptime Institute awards registry",
+      "Indonesian business registry (companieshouse.id)",
+      "IDPRO member directory"
     ],
-    "notes": "Capacity figures represent IT load capacity where available. Some facilities lack public MW disclosures."
+    "notes": "Capacity figures represent IT load capacity where available. Some facilities lack public MW disclosures. Updated 2026-03-15 following cross-reference against BKPM tax holiday recipient list.",
+    "changelog": [
+      "2026-03-15: Added NTT Global Data Centers Indonesia, GDS/DayOne (Batam), Digital Realty Bersama/BDDC, DCI Indonesia E1, K2 Data Centres/Sinarmas Land, Bitera/MIG, Korea Investment/Sinar Mas (KMG) as new entries. Corrected Digital Edge entry to capture existing Jakarta facilities. Split and corrected the erroneous 'Korea Investment Partners / Sinar Mas Land + Digital Realty / Mitra Aditama' compound entry. Added PT entity cross-references for tax holiday linkage."
+    ]
   },
   "market_summary": {
     "total_existing_facilities": 88,
@@ -29,16 +38,36 @@
   "major_investments": [
     {
       "company": "Digital Edge (Stonepeak)",
+      "pt_entity": "PT Ekagrata Data Gemilang (via PT Indointernet Tbk, IDX: EDGE)",
+      "tax_holiday_confirmed": true,
       "project": "CGK Campus, GIIC Bekasi",
       "investment_usd_billion": 4.5,
       "capacity_mw": 500,
       "scalable_to_mw": 1000,
       "status": "Under Construction",
       "timeline": "Q4 2026 - Q2 2027 (Phase 1)",
-      "pue_target": 1.25
+      "pue_target": 1.25,
+      "notes": "Future campus. Existing Jakarta operations (EDGE1 6 MW Kuningan + EDGE2 23 MW South Jakarta, total 29 MW, USD 490M invested) are held under the same PT entity but are a separate, operational asset. USD 325M BCA credit facility secured 2024 for EDGE2 completion and next build."
+    },
+    {
+      "company": "Digital Edge (Stonepeak) — Existing Jakarta Operations",
+      "pt_entity": "PT Ekagrata Data Gemilang (via PT Indointernet Tbk, IDX: EDGE)",
+      "tax_holiday_confirmed": true,
+      "project": "EDGE1 + EDGE2, Jakarta",
+      "investment_usd_billion": 0.49,
+      "capacity_mw": 29,
+      "status": "Operational",
+      "timeline": "EDGE1: pre-2021; EDGE2: February 2024",
+      "locations": [
+        {"facility": "EDGE1", "address": "Jalan Kuningan Barat, Central Jakarta", "capacity_mw": 6, "racks": 1500},
+        {"facility": "EDGE2", "address": "Jalan Kuningan Mulia, South Jakarta", "capacity_mw": 23, "racks": 3400, "certification": "Tier III, LEED Gold target"}
+      ],
+      "notes": "EDGE2 was the largest data center in Jakarta metro at launch (February 2024). USD 165M acquisition of Indonet (2021) + USD 325M BCA credit facility (2024)."
     },
     {
       "company": "DAMAC Digital",
+      "pt_entity": null,
+      "tax_holiday_confirmed": false,
       "project": "Cikarang AI-Ready DC",
       "investment_usd_billion": 2.3,
       "capacity_mw": 144,
@@ -47,6 +76,8 @@
     },
     {
       "company": "Microsoft",
+      "pt_entity": "PT Microsoft Operations Indonesia",
+      "tax_holiday_confirmed": true,
       "project": "Indonesia Central Cloud Region",
       "investment_usd_billion": 1.7,
       "capacity_mw": null,
@@ -54,15 +85,154 @@
       "timeline": "2024-2028"
     },
     {
-      "company": "DCI Indonesia",
-      "project": "H2 Pertiwi Lestari",
+      "company": "DCI Indonesia (H2 Campus)",
+      "pt_entity": "PT Datacenter Indonesia Sukses Makmur (JV: PT DCI Indonesia Tbk IDX:DCII + Salim Group)",
+      "tax_holiday_confirmed": true,
+      "project": "H2 Pertiwi Lestari, Karawang",
       "investment_usd_billion": null,
       "capacity_mw": 600,
+      "capacity_mw_operational": 27,
       "status": "Under Construction (Phase 1: 135 MW)",
-      "timeline": "2026+"
+      "timeline": "2026+",
+      "locations": [
+        {"facility": "H2-01", "opened": "November 2021", "capacity_mw": 15, "racks": 3000},
+        {"facility": "H2-02", "opened": "June 2023", "capacity_mw": 12, "notes": "First solar-powered DC in Indonesia (30 MW solar over 30 ha)"}
+      ],
+      "notes": "86-hectare campus at Pertiwi Lestari Industrial Estate (Salim Group-owned land). Long-term 600 MW potential. DCII group capex IDR 883B (2024), IDR ~2T/yr budgeted 2025-2026."
+    },
+    {
+      "company": "DCI Indonesia (E1 CBD)",
+      "pt_entity": "PT Datacenter Indonesia Sukses Perkasa (JV: PT DCI Indonesia Tbk IDX:DCII + Salim Group)",
+      "tax_holiday_confirmed": true,
+      "project": "E1 Data Center, South Jakarta",
+      "investment_usd_billion": null,
+      "capacity_mw": 18,
+      "status": "Operational",
+      "timeline": "Opened December 2023",
+      "locations": [
+        {"facility": "E1", "address": "Ariobimo Sentral, Jl. HR Rasuna Said, Kuningan, South Jakarta", "capacity_mw": 18, "racks": 4000, "floors": 11, "sqm": 30000}
+      ],
+      "notes": "First Tier-IV certified data center in central Jakarta. Described as Southeast Asia's first AI-equipped Tier-IV data center. Uptime Institute Tier-IV certified."
+    },
+    {
+      "company": "NTT Global Data Centers Indonesia",
+      "pt_entity": "PT NTT Global Data Centers Indonesia (also: PT NTT Indonesia Nexcenter)",
+      "tax_holiday_confirmed": true,
+      "project": "JKT1 / JKT2 / JKT2A / JKT3 Campus Portfolio",
+      "investment_usd_billion": 0.5,
+      "capacity_mw": 70,
+      "status": "Operational + Under Construction",
+      "timeline": "Operational since 2015 (Cyber CSF acquisition); JKT2A opening Q1 2026",
+      "locations": [
+        {"facility": "JKT1", "address": "Wisma 46, Jl. Jend. Sudirman Kav. 1, Jakarta", "capacity_mw": null, "notes": "Carrier-neutral CBD hub; capacity undisclosed"},
+        {"facility": "JKT2 (Nexcenter Cyber Building)", "address": "Cyber Building 1, Jl. Kuningan Barat No. 8, South Jakarta", "capacity_mw": 9.4, "racks": 2800, "sqm": 7700},
+        {"facility": "JKT2A", "address": "Central Jakarta (same campus as JKT2)", "capacity_mw": 12, "sqm": 5800, "status": "Opening Q1 2026; topped out July 2025"},
+        {"facility": "JKT3", "address": "Bekasi, West Java", "capacity_mw_initial": 15.2, "capacity_mw_full": 45, "racks": 7800, "sqm": 18000, "opened": "April 2022"}
+      ],
+      "parent": "NTT Corp (Japan, TYO: 9432) via NTT Global Data Centers Corp (NTT Com 60%, NTT Urban Dev 20%, NTT Corp 10%, NTT Finance 10%)",
+      "notes": "Founding member of IDPRO. In Indonesia since 2015 (acquired PT Cyber CSF). USD 500M investment commitment for JKT3 (announced 2019). Part of USD 10B+ global NTT DATA capex plan 2023-2027. Significant dataset gap: NTT had ~70 MW operational before this update."
+    },
+    {
+      "company": "GDS Holdings / DayOne",
+      "pt_entity": "PT GDS IDC Service (70% GDS/DayOne via GDS IDC Services Pte. Ltd. Singapore; 30% PT Maleo Investasi Indonesia)",
+      "tax_holiday_confirmed": true,
+      "project": "Nongsa Digital Park Campus, Batam",
+      "investment_usd_billion": 0.412,
+      "capacity_mw": 72,
+      "status": "Under Construction",
+      "timeline": "Groundbreaking July 2023; financing closed June 2025; completion targeted end-2025",
+      "locations": [
+        {"facility": "Nongsa Campus (3 buildings)", "address": "Nongsa Digital Park (SEZ), Batam, Riau Islands", "capacity_mw": 72, "sqm_land": 28730, "notes": "~25 km from Singapore; within Batam SEZ"}
+      ],
+      "jv_partner": "Indonesia Investment Authority (INA, sovereign wealth fund) — formalized October 2023 in presence of President Joko Widodo",
+      "financing": "IDR 6.7 trillion (~USD 412M) syndicated loan from DBS + UOB (June 2025) — largest rupiah-denominated datacenter loan on record",
+      "parent": "GDS Holdings Limited (NASDAQ: GDS; HKEX: 9698) via DayOne (formerly GDS International)",
+      "notes": "All Indonesia operations in Batam SEZ. Batam chosen for proximity to Singapore (~25 km) and SEZ incentives. Earlier Rp 4 trillion investment cited by Indonesian govt (July 2023). INA participation in DayOne Series C (USD 2B+ round). Significant dataset gap: Batam entirely absent from prior dataset despite 21.7% CAGR flagged in market summary."
+    },
+    {
+      "company": "Digital Realty Bersama (BDDC)",
+      "pt_entity": "PT PCDC Propco One (originally SpaceDC; now held by BDDC / Bersama Digital Infrastructure Asia)",
+      "tax_holiday_confirmed": true,
+      "project": "JBT1, West Jakarta",
+      "investment_usd_billion": 0.1,
+      "capacity_mw": 30,
+      "scalable_to_mw": 60,
+      "status": "Operational",
+      "timeline": "Operational (SpaceDC origin); BDDC acquired 2023; Digital Realty JV 2025",
+      "locations": [
+        {"facility": "JBT1 (Jakarta Barat Tangerang 1)", "address": "Jalan Daan Mogot KM 18, Kalideres, West Jakarta", "capacity_mw": 30, "notes": "Uptime Institute Tier III certified. Originally SpaceDC JAK2."}
+      ],
+      "ownership_chain": "SpaceDC (GIC-backed) → AtriaDC/Saratoga Investama (IDX: SRTG) → BDDC / BDIA (Macquarie Asset Management + Saratoga + Provident Capital) → Digital Realty Bersama (Digital Realty 50:50 JV with BDIA, ~USD 100M contribution, 2025)",
+      "notes": "BDDC's full two-site platform (JBT1 + JST) targets 60 MW combined / ~USD 600M full buildout. Digital Realty's entry into Indonesia is through this JV, not a greenfield build. No connection to Princeton Digital Group."
+    },
+    {
+      "company": "K2 Data Centres / Sinarmas Land",
+      "pt_entity": "PT K2ID Strategic Infrastructure",
+      "tax_holiday_confirmed": true,
+      "project": "K2 JKT1 Campus (Bekasi) + Karawang Campus",
+      "investment_usd_billion": null,
+      "capacity_mw": 58.8,
+      "scalable_to_mw": 120,
+      "status": "Operational (JKT1 Phase 1); Planned (Karawang)",
+      "timeline": "JKT1 Phase 1 online early 2024; Karawang pipeline",
+      "locations": [
+        {"facility": "K2 JKT1", "address": "Kota Deltamas, Bekasi Regency, West Java", "capacity_mw": 58.8, "certification": "Uptime Institute Tier III, LEED Gold"},
+        {"facility": "Karawang Campus", "address": "Karawang Regency, West Java (land acquired from PT Suryacipta Swadaya)", "capacity_mw": null, "status": "Pipeline"}
+      ],
+      "parent": "Kuok Group (Malaysia) — K2 Data Centres est. 2017. 'K' = Kuok, 'ID' = Indonesia. No Korean affiliation.",
+      "jv_partner": "Sinarmas Land Limited (SGX-listed property arm of Sinar Mas Group Indonesia)",
+      "regional_plan": "USD 9B investment plan across Malaysia, Indonesia, Thailand over 5 years; USD 1B deployed to date",
+      "notes": "Formerly mislabeled in dataset as 'Korea Investment Partners / Sinar Mas Land'. K2/Sinarmas Land and Korea Investment/Sinar Mas are entirely separate JVs. Sinar Mas has two distinct datacenter JV relationships."
+    },
+    {
+      "company": "Korea Investment / Sinar Mas (KMG)",
+      "pt_entity": "PT Kuningan Mas Gemilang",
+      "tax_holiday_confirmed": false,
+      "project": "AI Data Hub, Setiabudi, Jakarta",
+      "investment_usd_billion": 0.3,
+      "capacity_mw": 18,
+      "scalable_to_mw": 220,
+      "status": "Under Construction",
+      "timeline": "Completion targeted 2027",
+      "locations": [
+        {"facility": "KMG Jakarta", "address": "Menteng Atas, Setiabudi, South Jakarta", "sqm": 44195, "capacity_mw": 18, "scalable_to_mw": 220}
+      ],
+      "parent": "50:50 JV: Korea Investment Real Asset Management Co. (unit of Korea Investment Holdings, South Korea) + Sinar Mas Group (Indonesia)",
+      "equity_structure": "~USD 53M each (70 billion won); plus 260 billion won project financing. Total ~USD 300M (400 billion won).",
+      "tenant": "LG CNS (via LG Sinarmas Technology Solutions JV) signed to build hyperscale AI datacenter starting at 30 MW scalable to 220 MW",
+      "notes": "Newly added; previously absent from dataset. This is the correct entity linked to 'Korea Investment + Sinar Mas' — separate from K2/Sinarmas Land. Tax holiday status unconfirmed as of March 2026."
+    },
+    {
+      "company": "Bitera (MMS Group Indonesia)",
+      "pt_entity": "PT Mitra Informatika Gemilang",
+      "tax_holiday_confirmed": true,
+      "project": "Bitera Data Center, South Jakarta",
+      "investment_usd_billion": null,
+      "capacity_mw": 20,
+      "status": "Operational",
+      "timeline": "Grand launch February 27, 2024",
+      "locations": [
+        {"facility": "Bitera Jakarta", "address": "Kuningan, Setiabudi, South Jakarta", "capacity_mw": 20, "racks": 4000, "sqm": 8600, "floors": 9, "certification": "Uptime Institute Tier III+, ISO 27001"}
+      ],
+      "parent": "MMS Group Indonesia (100% domestic; founder Andrew Hidayat). Three business pillars: MMS Resources, MMS Land, MMS Solution.",
+      "power": "59.8 MVA PLN 'Ultimate' service; 100% renewable via PLN RECs",
+      "notes": "100% domestically-owned operator. Grand launch attended by Minister of Investment Bahlil Lahadalia and Minister of SOEs Erick Thohir. J Trust Bank syndicated credit financing. No connection to Digital Realty 'Mitra Aditama' reference found in prior market research — that reference appears to be a data error."
+    },
+    {
+      "company": "DATA CENTER GALAXIS",
+      "pt_entity": "PT. Data Center Galaxis",
+      "tax_holiday_confirmed": true,
+      "project": "Unknown",
+      "investment_usd_billion": null,
+      "capacity_mw": null,
+      "status": "Unknown — entity unverifiable from public sources",
+      "timeline": null,
+      "notes": "Tax holiday confirmed by government list, but no public data found on Baxtel, DataCenterMap, DataCenterDynamics, or Indonesian media. May be newly incorporated, operating under a different trade name, or a very small/private operator. Direct registry query via ahu.go.id or oss.go.id recommended to verify."
     },
     {
       "company": "BDx Indonesia",
+      "pt_entity": null,
+      "tax_holiday_confirmed": false,
       "project": "CGK4 Jatiluhur AI Campus",
       "investment_usd_billion": null,
       "capacity_mw": 500,
@@ -71,22 +241,19 @@
     },
     {
       "company": "Tencent",
+      "pt_entity": null,
+      "tax_holiday_confirmed": false,
       "project": "Indonesia Expansion",
       "investment_usd_billion": 0.5,
       "capacity_mw": null,
       "status": "Planned",
-      "timeline": "2026"
-    },
-    {
-      "company": "Korea Investment Partners / Sinar Mas Land + Digital Realty / Mitra Aditama",
-      "project": "Multiple JV Facilities",
-      "investment_usd_billion": 0.75,
-      "capacity_mw": null,
-      "status": "Planned",
-      "timeline": "2024-2026"
+      "timeline": "2026",
+      "notes": "MNC subject to OECD Pillar Two; tax holiday benefit may be substantially offset by home-country top-up tax."
     },
     {
       "company": "Indosat-NVIDIA",
+      "pt_entity": null,
+      "tax_holiday_confirmed": false,
       "project": "AI Factory Jakarta",
       "investment_usd_billion": 0.25,
       "capacity_mw": 80,
@@ -95,14 +262,19 @@
     },
     {
       "company": "Princeton Digital Group",
+      "pt_entity": null,
+      "tax_holiday_confirmed": false,
       "project": "Cibitung AI Campus + Batam",
       "investment_usd_billion": 0.11,
       "capacity_mw": 118,
       "status": "Under Construction / Planned",
-      "timeline": "2025-2026"
+      "timeline": "2025-2026",
+      "notes": "PDG's Indonesian entity is 'PT Princeton Digital Group Data Centers'. No connection to PT PCDC Propco One."
     },
     {
       "company": "EdgeConneX",
+      "pt_entity": null,
+      "tax_holiday_confirmed": false,
       "project": "Jakarta Campus Expansion",
       "investment_usd_billion": null,
       "capacity_mw": 200,
@@ -110,6 +282,24 @@
       "timeline": "2025"
     }
   ],
+  "tax_holiday_recipients": {
+    "source": "BKPM tax holiday recipient list (cross-referenced March 2026)",
+    "note": "List uses Indonesian PT legal entity names. Multiple PT entities may map to a single international brand.",
+    "confirmed_recipients": [
+      {"pt_entity": "PT Ekagrata Data Gemilang", "maps_to": "Digital Edge (Stonepeak) — existing Jakarta operations"},
+      {"pt_entity": "PT DCI Indonesia", "maps_to": "DCI Indonesia (parent listed entity IDX: DCII)"},
+      {"pt_entity": "PT PCDC Propco One", "maps_to": "Digital Realty Bersama / BDDC (JBT1, West Jakarta)"},
+      {"pt_entity": "PT DCI Indonesia Tbk", "maps_to": "DCI Indonesia (same as above, listed entity)"},
+      {"pt_entity": "PT Datacenter Indonesia Sukses Makmur", "maps_to": "DCI Indonesia H2 Campus, Karawang (DCI + Salim Group JV)"},
+      {"pt_entity": "PT NTT Global Data Centers Indonesia", "maps_to": "NTT Global Data Centers — JKT1/JKT2/JKT2A/JKT3 portfolio"},
+      {"pt_entity": "PT. Data Center Galaxis", "maps_to": "Unknown — unverifiable from public sources"},
+      {"pt_entity": "PT. Datacenter Indonesia Sukses Perkasa", "maps_to": "DCI Indonesia E1 Data Center, South Jakarta (DCI + Salim Group JV)"},
+      {"pt_entity": "PT. K2ID Strategic Infrastructure", "maps_to": "K2 Data Centres (Kuok Group, Malaysia) + Sinarmas Land JV — Bekasi + Karawang campuses"},
+      {"pt_entity": "PT. Mitra Informatika Gemilang", "maps_to": "Bitera / MMS Group Indonesia — South Jakarta, 20 MW"},
+      {"pt_entity": "PT Microsoft Operations Indonesia", "maps_to": "Microsoft — Indonesia Central Cloud Region"},
+      {"pt_entity": "PT. GDS IDC Service", "maps_to": "GDS Holdings / DayOne — Nongsa Digital Park, Batam, 72 MW"}
+    ]
+  },
   "tax_incentives": {
     "corporate_income_tax_rate_percent": 22,
     "tax_holiday": {
@@ -160,7 +350,7 @@
       "annual_revenue_foregone_full_holiday_usd_million": 370,
       "annual_revenue_foregone_full_holiday_idr_trillion": 5.7,
       "ten_year_cumulative_foregone_usd_billion": 3.7,
-      "notes": "Estimate assumes all major investments qualify for 100% tax holiday. Actual foregone revenue depends on profitability timelines, depreciation schedules, and OECD Pillar Two adjustments. Conservative estimate."
+      "notes": "Estimate assumes all major investments qualify for 100% tax holiday. Actual foregone revenue depends on profitability timelines, depreciation schedules, and OECD Pillar Two adjustments. Conservative estimate. Does not yet incorporate NTT (USD 500M+), GDS/DayOne (USD 412M), or K2/Sinarmas (part of USD 9B regional plan) investments confirmed as tax holiday recipients in March 2026 update — revised estimate pending."
     }
   }
 }
