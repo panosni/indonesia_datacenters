@@ -1,0 +1,382 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.8cm,top=2.2cm,bottom=2.2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{lmodern}
+\usepackage{hyperref}
+
+% ── Colour palette ──────────────────────────────────────────────────
+\definecolor{navy}{RGB}{0,32,96}
+\definecolor{teal}{RGB}{0,112,120}
+\definecolor{lightgray}{RGB}{245,245,245}
+\definecolor{midgray}{RGB}{180,180,180}
+\definecolor{alertred}{RGB}{180,0,0}
+\definecolor{kpibg}{RGB}{0,32,96}
+
+% ── Section formatting ───────────────────────────────────────────────
+\titleformat{\section}{\normalsize\bfseries\color{navy}\uppercase}{}{0em}{}[\vspace{-4pt}\color{midgray}\hrule\vspace{4pt}]
+\titleformat{\subsection}{\small\bfseries\color{teal}}{}{0em}{}
+\setlist{noitemsep,topsep=2pt,leftmargin=*}
+\renewcommand{\arraystretch}{1.3}
+
+% ── Header / footer ─────────────────────────────────────────────────
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\textcolor{navy}{\textbf{Indonesia Data Centre Sector --- Fiscal Cost of Tax Incentives}}}
+\fancyhead[R]{\small\textcolor{midgray}{March 2026 | Confidential}}
+\fancyfoot[C]{\small\textcolor{midgray}{\thepage}}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\hypersetup{colorlinks=false}
+
+\begin{document}
+
+% ═══════════════════════════════════════════════════════════════════
+%  PAGE 1 — FISCAL COST SUMMARY
+% ═══════════════════════════════════════════════════════════════════
+
+{\centering
+  {\LARGE\bfseries\color{navy} Indonesia Data Centre Sector}\\[3pt]
+  {\large\color{teal} Fiscal Cost of Tax Incentives --- Portfolio Summary}\\[2pt]
+  {\small\color{midgray} 45 Facilities (23 Operational \textbar{} 12 Under Construction \textbar{} 10 Planned) \textbar{} March 2026}\\[6pt]
+}
+
+\noindent\color{navy}\rule{\linewidth}{1.5pt}
+
+\vspace{8pt}
+
+% ── KPI row ─────────────────────────────────────────────────────────
+\noindent
+\begin{tabularx}{\linewidth}{XXXXX}
+  \cellcolor{kpibg}\centering\textcolor{white}{\textbf{\large IDR 373.9T}} &
+  \cellcolor{kpibg}\centering\textcolor{white}{\textbf{\large IDR 118.2T}} &
+  \cellcolor{kpibg}\centering\textcolor{white}{\textbf{\large IDR 19.1T}}  &
+  \cellcolor{kpibg}\centering\textcolor{white}{\textbf{\large IDR 0.8T}}   &
+  \cellcolor{alertred}\centering\textcolor{white}{\textbf{\large IDR 138.1T}} \\
+  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize Total Investment} &
+  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize Tax Holiday Cost} &
+  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize Super Deduction Cost} &
+  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize SEZ VAT Exemption} &
+  \cellcolor{alertred}\centering\textcolor{white}{\scriptsize \textbf{Grand Total Fiscal Cost}} \\
+  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize (USD 24.1B)} &
+  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize (over holiday periods)} &
+  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize (6 yrs post-holiday)} &
+  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize (Nongsa KEK only)} &
+  \cellcolor{alertred}\centering\textcolor{white}{\scriptsize (all incentives combined)}\\
+\end{tabularx}
+
+\vspace{10pt}
+
+% ── Tier breakdown ───────────────────────────────────────────────────
+\section{Fiscal Cost Breakdown by Investment Tier (PMK 69/2024)}
+
+\small
+\begin{tabular}{lrrrrrrr}
+  \toprule
+  \textbf{Investment Tier} & \textbf{N} & \textbf{Investment} & \textbf{Holiday} & \textbf{Holiday} & \textbf{Super Ded.} & \textbf{VAT} & \textbf{Total} \\
+  & & \textbf{(IDR T)} & \textbf{Years} & \textbf{Cost (IDR T)} & \textbf{Cost (IDR T)} & \textbf{(IDR T)} & \textbf{(IDR T)} \\
+  \midrule
+  Below IDR 100B          & 2  &   0.14 &  0  &   0.000 &  0.000 & 0.000 &  0.000 \\
+  IDR 100B--500B          & 2  &   0.64 &  5  &   0.043 &  0.042 & 0.018 &  0.103 \\
+  IDR 500B--1T            & 3  &   2.34 &  5  &   0.157 &  0.079 & 0.000 &  0.236 \\
+  IDR 1T--5T              & 19 &  47.72 &  7  &   6.379 &  2.283 & 0.119 &  8.781 \\
+  IDR 5T--15T             & 14 &  98.36 & 10  &  18.460 &  4.616 & 0.659 & 23.735 \\
+  IDR 15T--30T            & 2  &  41.85 & 15  &   9.458 &  1.577 & 0.000 & 11.035 \\
+  Above IDR 30T           & 3  & 182.90 & 20  &  83.737 & 10.468 & 0.000 & 94.205 \\
+  \midrule
+  \rowcolor{lightgray}
+  \textbf{Grand Total}    & \textbf{45} & \textbf{373.95} & --- & \textbf{118.234} & \textbf{19.065} & \textbf{0.796} & \textbf{138.095} \\
+  \bottomrule
+\end{tabular}
+
+\vspace{8pt}
+{\footnotesize\color{midgray}
+  \textit{Holiday Cost} = investment $\times$ 12\% profit $\times$ CIT forfeited rate $\times$ holiday years. \quad
+  \textit{Super Ded. Cost} = investment $\times$ 5\% $\times$ CIT forfeited rate $\times$ 6 years. \quad
+  \textit{VAT} = investment $\times$ 35\% $\times$ 11\% (KEK Nongsa facilities only).
+}
+
+\vspace{8pt}
+
+% ── Revenue loss: annual + 20-year projection ─────────────────────────────
+\section{Government Revenue Foregone: Annual Cost and 20-Year Projection}
+
+\small
+\begin{tabular}{lrrrr}
+  \toprule
+  \textbf{Incentive} &
+  \textbf{Annual Cost} &
+  \textbf{\% of GDP} &
+  \textbf{20-Year Total} &
+  \textbf{Notes} \\
+  & \textbf{(IDR T/yr)} & \textbf{(2024 GDP)} & \textbf{(IDR T)} & \\
+  \midrule
+  Tax Holiday (CIT)          & 7.613 & 0.034\% & 118.234 & Avg.\ run-rate; max 20-yr holiday \\
+  Super Deduction (PP 78)    & 3.174 & 0.014\% &  19.044 & 6 yrs post-holiday; 5\%/yr deduction \\
+  SEZ VAT Exemption (Nongsa) & 0.265 & 0.001\% &   0.796 & One-off; amortised over 3-yr build \\
+  \midrule
+  \rowcolor{lightgray}
+  \textbf{Grand Total}       & \textbf{11.052} & \textbf{0.050\%} & \textbf{138.074} & All incentives combined \\
+  \bottomrule
+\end{tabular}
+
+\vspace{4pt}
+{\footnotesize\color{midgray}
+  \textit{Annual cost} for Tax Holiday = sum of (investment $\times$ 12\% $\times$ CIT forfeited rate) across all facilities with an active holiday.
+  \textit{Annual cost} for Super Deduction = sum of (investment $\times$ 5\% $\times$ CIT forfeited rate) during the 6-year deduction window.
+  \textit{Annual cost} for SEZ VAT = total exemption (IDR 0.796T) $\div$ 3 years assumed construction period.
+  Indonesia 2024 nominal GDP = IDR 22,139T (BPS). 20-year totals reflect full contractual periods, not a uniform 20-year stream.
+}
+
+\vspace{8pt}
+
+% ── Pillar 2 split ──────────────────────────────────────────────────
+\section{Pillar 2 BEPS Impact on Fiscal Cost}
+
+\begin{tabular}{lrrrrrr}
+  \toprule
+  \textbf{Pillar 2 Status} & \textbf{Facilities} & \textbf{CIT Forfeited} & \textbf{Holiday Cost} & \textbf{Super Ded. Cost} & \textbf{VAT} & \textbf{Total} \\
+  \midrule
+  In scope (revenue $>$\euro750M, margin $>$10\%) & 18 & 7\% above 15\% floor  & 14.024 & 2.622 & 0.119 & \textbf{16.765} \\
+  Not in scope                                    & 27 & 22\% full statutory    & 104.210 & 16.443 & 0.677 & \textbf{121.330} \\
+  \midrule
+  \rowcolor{lightgray}
+  \textbf{Total}                                  & \textbf{45} & --- & \textbf{118.234} & \textbf{19.065} & \textbf{0.796} & \textbf{138.095} \\
+  \bottomrule
+\end{tabular}
+
+\vspace{4pt}
+{\footnotesize\color{midgray}
+  Pillar 2 in-scope entities pay a minimum 15\% effective CIT globally; Indonesia forfeits only 7\% (22\%$-$15\%), as the home jurisdiction collects the top-up tax.
+  Non-Pillar 2 entities pay 0\% during the holiday: Indonesia forfeits the full 22\% statutory rate.
+}
+
+\vspace{8pt}
+
+% ── Top 5 exposures ─────────────────────────────────────────────────
+\section{Top 5 Fiscal Cost Exposures}
+
+\begin{tabular}{llrrrr}
+  \toprule
+  \textbf{Facility} & \textbf{Operator} & \textbf{P2} & \textbf{Holiday Cost} & \textbf{Super Ded.} & \textbf{Total (IDR T)} \\
+  \midrule
+  CGK4 Jatiluhur (500 MW)       & BDx Indonesia         & No  & 40.920 & 5.115 & \textbf{46.035} \\
+  CGK Campus (500 MW)           & Digital Edge (Indonet)& No  & 36.828 & 4.604 & \textbf{41.432} \\
+  JC3 (120 MW)                  & Princeton Digital     & No  &  6.138 & 1.023 & \textbf{7.161}  \\
+  Cikarang DC (144 MW)          & DAMAC Digital         & Yes &  5.989 & 0.749 & \textbf{6.738}  \\
+  Indonesia Central Cloud Region & Microsoft            & Yes &  3.320 & 0.554 & \textbf{3.874}  \\
+  \bottomrule
+\end{tabular}
+
+\vspace{4pt}
+{\footnotesize\color{midgray}
+  BDx and Digital Edge together account for \textbf{IDR 87.5T} (63\%) of the grand total fiscal cost,
+  driven by 500 MW capacity commitments on 20-year holidays with no Pillar 2 constraint.
+}
+
+\clearpage
+
+% ═══════════════════════════════════════════════════════════════════
+%  PAGE 2 — ASSUMPTIONS
+% ═══════════════════════════════════════════════════════════════════
+
+{\centering
+  {\LARGE\bfseries\color{navy} Methodology \& Key Assumptions}\\[3pt]
+  {\small\color{midgray} Indonesia Data Centre Fiscal Cost Analysis --- March 2026}\\[6pt]
+}
+\noindent\color{navy}\rule{\linewidth}{1.5pt}
+
+\vspace{6pt}
+
+\section{A. Investment Values}
+\begin{enumerate}
+  \item \textbf{Primary sources:} Confirmed investment figures are drawn from operator press releases, project financing announcements (DBS/UOB, BCA, IIF, green-loan facilities), CEO statements, and due-diligence media (Data Centre Dynamics, Jakarta Globe, Kontan).
+  \item \textbf{Imputation for undisclosed values:} Where no public figure exists, investment is estimated using a tiered cost-per-MW model: Tier IV at USD 10M/MW (confirmed from DCI Deputy President benchmark); standard Tier III at USD 6.5M/MW (weighted average across 8 confirmed anchor points); legacy Tier III ($<$2015) at USD 4--5M/MW.
+  \item \textbf{Reference investment for tax computations:} For operational facilities, \texttt{investment\_idr\_trillion} is used. For Under Construction and Planned facilities, \texttt{planned\_investment\_idr\_trillion} is used. For K2 JKT1 (both columns populated), the larger full-campus planned value (IDR 5.92T) is applied as it represents the total committed project.
+  \item \textbf{Exchange rate:} IDR 15,500 / USD 1 (March 2026 spot mid-rate).
+\end{enumerate}
+
+\section{B. Profitability Assumption}
+\begin{enumerate}[resume]
+  \item \textbf{Annual profit = investment $\times$ 12\%.} This is a sector-level approximation of steady-state EBIT margin on total capital deployed, consistent with published Tier III/IV hyperscale data centre benchmarks (typical range: 10--15\% EBIT on invested capital).
+  \item This is a simplification: it ignores ramp-up periods, capital recycling, leverage effects, and asset-light structures (e.g.\ Oracle leasing from DayOne).
+\end{enumerate}
+
+\section{C. Tax Holiday (PMK 69/2024)}
+\begin{enumerate}[resume]
+  \item \textbf{CIT statutory rate:} 22\% (Indonesia corporate income tax, effective from FY2023 onward under UU HPP).
+  \item \textbf{Tiered holiday structure} (from PMK 69/2024, amending PMK 130/PMK.010/2020):
+  \begin{itemize}
+    \item Below IDR 100B: no holiday (below threshold)
+    \item IDR 100B--500B: 50\% CIT reduction, 5 years
+    \item IDR 500B--1T: 100\% CIT reduction, 5 years
+    \item IDR 1T--5T: 100\% reduction, 7 years
+    \item IDR 5T--15T: 100\% reduction, 10 years
+    \item IDR 15T--30T: 100\% reduction, 15 years
+    \item Above IDR 30T: 100\% reduction, 20 years
+  \end{itemize}
+  \item \textbf{Fiscal cost formula:} Investment $\times$ 12\% (annual profit) $\times$ CIT forfeited rate $\times$ holiday years.
+  \item \textbf{Post-holiday transition:} Under PMK 69/2024, a 2-year partial CIT reduction (25--50\%) applies immediately after the holiday ends. This transition period is \textit{not separately costed} in this analysis.
+\end{enumerate}
+
+\section{D. BEPS Pillar 2 --- Global Minimum Tax}
+\begin{enumerate}[resume]
+  \item \textbf{Scope criteria:} An operator is classified as Pillar 2 in-scope if its MNE group meets \textit{both}: (i) consolidated group revenue exceeding \euro750M, and (ii) a group profitability (operating income / revenue) exceeding 10\%.
+  \item \textbf{CIT forfeited (Pillar 2 in scope):} Indonesia forfeits only 7\% (= 22\% statutory $-$ 15\% GloBE minimum floor). The remaining 15\% is collected by the parent jurisdiction as a top-up tax (Qualified Domestic Minimum Top-up Tax or Income Inclusion Rule).
+  \item \textbf{CIT forfeited (not in scope):} Indonesia forfeits the full 22\% statutory rate.
+  \item \textbf{Result:} 18 of 45 facilities (40\%) are Pillar 2 in-scope, representing IDR 16.8T (12\%) of the total fiscal cost. Pillar 2 meaningfully limits Indonesia's revenue loss only for the in-scope minority.
+\end{enumerate}
+
+\section{E. Super Deduction --- Tax Allowance (PP 78/2019)}
+\begin{enumerate}[resume]
+  \item \textbf{Legal basis:} Government Regulation No.\ 78/2019 (updated by PMK 81/2024) provides a 30\% net income reduction on total realized investment, applied at 5\% per year over 6 years starting after the tax holiday ends.
+  \item \textbf{Eligible sectors:} Data centres (KBLI 63111 --- digital hosting and data processing) are explicitly included in the 183 qualifying business fields.
+  \item \textbf{Annual deduction:} Investment $\times$ 5\% (reduces taxable income for 6 years post-holiday).
+  \item \textbf{Taxable income during super deduction period:} Investment $\times$ (12\% $-$ 5\%) = Investment $\times$ 7\%.
+  \item \textbf{Fiscal cost of super deduction:} Annual deduction $\times$ CIT forfeited rate $\times$ 6 years (7\% for Pillar 2 in-scope; 22\% for others).
+  \item \textbf{Exception:} Facilities below IDR 100B (no holiday) receive no post-holiday super deduction benefit under this analysis.
+\end{enumerate}
+
+\section{F. SEZ VAT Exemption}
+\begin{enumerate}[resume]
+  \item \textbf{Qualifying SEZ:} Only facilities within KEK Nongsa Digital Park (Batam), designated by Presidential Regulation on 8 June 2021. No other facility in the portfolio has confirmed formal KEK status.
+  \item \textbf{VAT rate:} Effective 11\% (12\% statutory $\times$ 11/12 mechanism under PMK-131/2024 for standard capital goods).
+  \item \textbf{Exempt investment basis:} 35\% of total investment is assumed to represent VAT-able capital goods (plant and equipment, fit-out). Land, financial instruments, and services subject to reverse-charge are excluded.
+  \item \textbf{VAT exemption formula:} Investment $\times$ 35\% $\times$ 11\%.
+  \item \textbf{Four SEZ facilities:} PDG Batam Campus (IDR 0.401T), DayOne Nongsa (IDR 0.258T), Oracle Nongsa (IDR 0.119T), Gaw Capital Batam (IDR 0.018T). Total: IDR 0.796T.
+\end{enumerate}
+
+\vspace{10pt}
+\noindent\footnotesize\color{midgray}
+\textit{Disclaimer: This analysis is based on publicly available information, operator disclosures, and sector benchmarks. All investment figures, particularly those marked as imputed (\texttt{investment\_imputed = 1}), carry estimation uncertainty. Fiscal cost figures should be interpreted as indicative order-of-magnitude assessments, not legal or accounting determinations. The interaction between PMK 69/2024 tax holidays, PP 78/2019 tax allowances, and OECD Pillar 2 GloBE rules is subject to Indonesian implementing legislation still under development as of March 2026.}
+
+\clearpage
+
+% ═══════════════════════════════════════════════════════════════════
+%  PAGE 3 — FISCAL SCENARIOS
+% ═══════════════════════════════════════════════════════════════════
+
+{\centering
+  {\LARGE\bfseries\color{navy} Fiscal Scenario Analysis}\\[3pt]
+  {\large\color{teal} Scenarios A \& B --- Expanded Incentive Cost Projections}\\[2pt]
+  {\small\color{midgray} March 2026 | GDP reference: IDR 22,139T (2024 BPS); 2030 est.\ IDR 34,167T (7.5\% p.a.)}\\[6pt]
+}
+\noindent\color{navy}\rule{\linewidth}{1.5pt}
+
+\vspace{8pt}
+
+% ── Scenario A ─────────────────────────────────────────────────────
+\section{Scenario A --- MW Expansion to 2800 MW by 2030}
+
+Scenario A scales the current fiscal cost per MW from the 23 operational facilities (453 MW, IDR 1.97T/yr) to the full
+2,800 MW target expected to be in service by 2030, once all under-construction and planned capacity is commissioned.
+
+\textbf{Methodology:} Annual fiscal cost per MW $= \text{IDR }1.97\text{T} \div 453\text{ MW} = \text{IDR }4.35\text{B/MW/yr}$.
+Extrapolated cost at 2800 MW $= 2800 \times 4.35\text{B} = \text{IDR }12.18\text{T/yr}$.
+
+\small
+\begin{tabular}{lrr}
+  \toprule
+  \textbf{Metric} & \textbf{Current (453 MW)} & \textbf{Scenario A --- 2800 MW (2030)} \\
+  \midrule
+  Operational MW            & 453 MW     & 2,800 MW \\
+  Annual fiscal cost        & IDR 1.97T  & IDR 12.18T \\
+  Annual cost (\% 2024 GDP) & 0.009\%    & 0.055\% \\
+  Annual cost (\% 2030 GDP est.)& ---     & 0.036\% \\
+  Implied cost per MW       & IDR 4.35B/MW & IDR 4.35B/MW \\
+  Lifetime total cost       & IDR 17.9T  & IDR 110.4T \\
+  Lifetime cost (\% 2024 GDP) & 0.081\%  & 0.499\% \\
+  \bottomrule
+\end{tabular}
+
+\vspace{4pt}
+{\footnotesize\color{midgray}
+  \textit{Note:} The extrapolated annual cost (IDR 12.18T) is slightly above the actual computed full-portfolio run-rate (IDR 11.05T/yr)
+  because the operational base is weighted toward non-Pillar-2 entities forfeiting the full 22\% CIT, whereas many future facilities
+  (Microsoft, DAMAC, Tencent) are Pillar-2 in-scope and only trigger a 7\% CIT forfeiture. The extrapolation therefore represents an
+  upper-bound estimate.
+}
+
+\vspace{10pt}
+
+% ── Scenario B ─────────────────────────────────────────────────────
+\section{Scenario B --- VAT Exemption Extended to All Under-Construction Facilities}
+
+Scenario B extends the existing SEZ VAT exemption (currently limited to Nongsa KEK, Batam) to all 11 under-construction
+facilities not already in a special economic zone. The same formula applies: investment $\times$ 35\% $\times$ 11\%.
+
+\small
+\begin{tabular}{lrr}
+  \toprule
+  \textbf{Facility (UC, non-SEZ)} & \textbf{Investment (IDR T)} & \textbf{VAT Exemption (IDR T)} \\
+  \midrule
+  CGK Campus --- Digital Edge (500 MW)     & 69.75 & 2.685 \\
+  Indonesia Central Cloud Region --- Microsoft & 26.35 & 1.015 \\
+  H1 Campus --- DCI Indonesia (73 MW)      & 11.32 & 0.436 \\
+  Cikarang Expansion --- NeutraDC (60 MW)  &  7.44 & 0.286 \\
+  IKDC1 --- IndoKeppel                     &  6.59 & 0.254 \\
+  Jakarta Campus --- EdgeConneX (200 MW)   &  6.26 & 0.241 \\
+  LG SM DC --- LG Sinar Mas (18 MW)        &  4.65 & 0.179 \\
+  STT Jakarta-2 --- ST Telemedia (24 MW)   &  3.72 & 0.143 \\
+  H2 Pertiwi Lestari Ph.1 --- DCI (600 MW) &  1.75 & 0.067 \\
+  Cibitung Campus --- PDG (22 MW)          &  1.71 & 0.066 \\
+  Jakarta 2 Annex --- NTT DATA (12 MW)     &  1.58 & 0.061 \\
+  \midrule
+  \rowcolor{lightgray}
+  \textbf{New VAT total (non-SEZ UC)}      & \textbf{140.12} & \textbf{5.433} \\
+  Existing SEZ VAT (Nongsa KEK)            & --- & 0.796 \\
+  \rowcolor{lightgray}
+  \textbf{Grand total VAT (Scenario B)}    & --- & \textbf{6.229} \\
+  \bottomrule
+\end{tabular}
+
+\vspace{4pt}
+{\footnotesize\color{midgray}
+  Digital Edge CGK Campus (IDR 2.685T) accounts for \textbf{49\%} of the new VAT exemption cost, reflecting its 500 MW scale.
+  Annual cost amortized over a 3-year build period = IDR 1.811T/yr (new) + IDR 0.265T/yr (existing SEZ) = IDR 2.076T/yr total.
+}
+
+\vspace{10pt}
+
+% ── Combined Summary ───────────────────────────────────────────────
+\section{Combined Scenario Summary}
+
+\small
+\begin{tabular}{lrrrr}
+  \toprule
+  \textbf{Scenario} & \textbf{Annual Cost} & \textbf{\% 2024 GDP} & \textbf{\% 2030 GDP} & \textbf{Total Cost} \\
+  & \textbf{(IDR T/yr)} & & \textbf{(est.)} & \textbf{(IDR T)} \\
+  \midrule
+  Current baseline (453 MW operational)              & 1.97  & 0.009\% & ---    &  17.9 \\
+  \rowcolor{lightgray}
+  \textbf{Scenario A} --- 2800 MW by 2030            & 12.18 & 0.055\% & 0.036\% & 110.4 \\
+  \textbf{Scenario B} --- VAT to all UC (incremental)&  1.81 & 0.008\% & 0.005\% &   5.4 \\
+  \rowcolor{lightgray}
+  \textbf{Scenario B} --- VAT total (incl.\ existing SEZ) & 2.08 & 0.009\% & 0.006\% & 6.2 \\
+  \midrule
+  \rowcolor{lightgray}
+  \textbf{Combined A + B}                            & \textbf{14.00} & \textbf{0.063\%} & \textbf{0.041\%} & \textbf{115.9} \\
+  \bottomrule
+\end{tabular}
+
+\vspace{4pt}
+{\footnotesize\color{midgray}
+  \textit{Combined A+B} = Scenario A (full MW ramp) plus incremental new VAT from Scenario B.
+  Annual costs for Scenario B reflect the amortised VAT over the 3-year construction window only; the one-off nature means the
+  total lifetime cost is IDR 5.4T (B only) or IDR 115.9T (A+B combined).
+  GDP 2024 = IDR 22,139T (BPS); 2030 GDP estimated at IDR 34,167T assuming 7.5\% nominal annual growth.
+}
+
+\end{document}
