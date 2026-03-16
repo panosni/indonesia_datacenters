@@ -167,13 +167,13 @@ new Chart(document.getElementById('capChart'), {
   }
 });
 
-// Fiscal doughnut — cumulative cost breakdown (USD Million)
+// Fiscal doughnut — cumulative cost breakdown (IDR Trillion)
 new Chart(document.getElementById('fiscalChart'), {
   type: 'doughnut',
   data: {
-    labels: ['CIT Holiday ($7.51B)', 'Super Deduction ($0.69B)', 'SEZ VAT & Duty ($0.06B)'],
+    labels: ['CIT Holiday (IDR 118.7T)', 'Super Deduction (IDR 11.0T)', 'SEZ VAT & Duty (IDR 1.0T)'],
     datasets: [{
-      data: [7510, 694, 62],
+      data: [118.7, 11.0, 1.0],
       backgroundColor: ['#C0392B','#E67E22','#16A085'],
       hoverOffset: 8
     }]
@@ -181,7 +181,7 @@ new Chart(document.getElementById('fiscalChart'), {
   options: {
     plugins: {
       legend: { position: 'right', labels: { font: { size: 12 }, padding: 12 } },
-      title: { display: true, text: 'Cumulative Fiscal Cost by Instrument (USD Million)', font: { size: 13 } }
+      title: { display: true, text: 'Cumulative Fiscal Cost by Instrument (IDR Trillion, total IDR 130.7T)', font: { size: 13 } }
     }
   }
 });
@@ -189,8 +189,8 @@ new Chart(document.getElementById('fiscalChart'), {
 // ═══════════════════════════════════════════════════════════
 // TABLE
 // ═══════════════════════════════════════════════════════════
-var sortKey = null;
-var sortDir = 1;
+var sortKey = 'investment_usd_million';
+var sortDir = -1;
 var MAX_MW = Math.max.apply(null, DC.map(function(d) { return d.capacity_mw || d.planned_capacity_mw || 0; }));
 
 // Populate city filter
@@ -261,4 +261,13 @@ function sortTable(key) {
 }
 window.sortTable = sortTable;
 
+// Mark default sort column header on load
+(function() {
+  var cols = ['operator','facility_name','city','province','status','capacity_mw','planned_capacity_mw','investment_usd_million','year_operational'];
+  var idx = cols.indexOf(sortKey);
+  if (idx >= 0) {
+    var th = document.querySelectorAll('.dc-table thead th')[idx];
+    if (th) th.className = 'desc';
+  }
+})();
 renderTable();
