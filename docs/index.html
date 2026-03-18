@@ -50,6 +50,7 @@ function checkPw() {
     <li><a href="#map-section">Map</a></li>
     <li><a href="#investments">Investments</a></li>
     <li><a href="#fiscal">Fiscal Cost</a></li>
+    <li><a href="#scenarios">Scenarios</a></li>
     <li><a href="#database">Database</a></li>
   </ul>
 </nav>
@@ -62,8 +63,7 @@ function checkPw() {
     <div class="kpi"><div class="val">22</div><div class="lbl">UC &amp; Planned</div></div>
     <div class="kpi"><div class="val">526 MW</div><div class="lbl">Operational Capacity</div></div>
     <div class="kpi"><div class="val">3,000 MW</div><div class="lbl">Expansion Target (2030)</div></div>
-    <div class="kpi"><div class="val">0.035%</div><div class="lbl">Annual Fiscal Cost (peak % GDP)</div></div>
-    <div class="kpi"><div class="val">0.683%</div><div class="lbl">Cumulative Fiscal Cost (% GDP)</div></div>
+    <div class="kpi"><div class="val">0.007%</div><div class="lbl">Current Annual Fiscal Cost (% GDP)</div></div>
   </div>
 </div>
 
@@ -100,15 +100,84 @@ function checkPw() {
 <!-- FISCAL -->
 <div class="section" id="fiscal">
   <div class="section-title">Fiscal Cost of Tax Incentives</div>
-  <div class="fiscal-grid">
-    <div class="fiscal-kpi red"><div class="fval">0.035%</div><div class="flbl">Annual Fiscal Cost (% of GDP)</div><div class="fnote">Peak annual CIT foregone: IDR 7.7T in 2027. Ramps from IDR 4.0T (0.018% of GDP) in 2025 as facilities come online. Net of QDMTT for 21 GMT-subject MNEs</div></div>
-    <div class="fiscal-kpi navy"><div class="fval">0.683%</div><div class="flbl">Cumulative Fiscal Cost (% of 2024 GDP)</div><div class="fnote">IDR 151.2T (USD 9.57B) over all incentive periods. Equivalent to 22.6% of the annual government education budget</div></div>
+  <div class="fiscal-grid" style="grid-template-columns:1fr">
+    <div class="fiscal-kpi red"><div class="fval">0.007%</div><div class="flbl">Current Annual Fiscal Cost (% of GDP)</div><div class="fnote">IDR 1.6T/yr for 27 operational facilities (526 MW). Net of QDMTT for 13 GMT-subject MNEs among operational operators. Cumulative cost over incentive periods: IDR 18.0T (USD 1.14B).</div></div>
   </div>
 
   <!-- Pie chart -->
   <div class="card" style="margin-top:1.25rem;padding:1.25rem 1.5rem">
     <canvas id="fiscalChart" height="110"></canvas>
   </div>
+</div>
+
+<!-- SCENARIOS -->
+<div class="section" id="scenarios">
+  <div class="section-title">Policy Scenarios</div>
+  <div class="scenario-cards">
+    <div class="scenario-card sc-baseline">
+      <div class="sc-tag">Baseline</div>
+      <div class="sc-name">Current Operational</div>
+      <div class="sc-mw">526 MW</div>
+      <div class="sc-desc">27 operational facilities. CIT holiday net of QDMTT for 13 GMT-subject MNEs.</div>
+    </div>
+    <div class="scenario-card sc-a">
+      <div class="sc-tag">Scenario A</div>
+      <div class="sc-name">Expansion to 3,000 MW by 2030</div>
+      <div class="sc-mw">+2,474 MW</div>
+      <div class="sc-desc">New capacity at IDR 111B/MW. New entrants: 43% GMT / 57% non-GMT, 10-yr holiday. No new SEZ concessions.</div>
+    </div>
+    <div class="scenario-card sc-b">
+      <div class="sc-tag">Scenario B</div>
+      <div class="sc-name">Universal VAT &amp; Duty (on A base)</div>
+      <div class="sc-mw">3,000 MW</div>
+      <div class="sc-desc">Extends SEZ VAT + import duty to all operators (35% equipment share) on the 3,000 MW / IDR 350.7T base. Incremental on top of Scenario A.</div>
+    </div>
+  </div>
+
+  <div class="table-wrap" style="margin-top:1.25rem">
+    <table class="incentive-table">
+      <thead>
+        <tr>
+          <th>Scenario</th>
+          <th>MW</th>
+          <th>Investment (IDR T)</th>
+          <th>CIT Holiday (IDR T)</th>
+          <th>Super Deduction (IDR T)</th>
+          <th>VAT + Duty (IDR T)</th>
+          <th>Total (IDR T)</th>
+          <th>Annual % GDP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Baseline</strong><br><span class="sc-sub">526 MW operational</span></td>
+          <td>526</td><td>76.1</td><td>15.7</td><td>2.2</td><td>0.2</td>
+          <td><strong>18.0</strong></td><td><strong>0.007%</strong></td>
+        </tr>
+        <tr class="sc-row-a-inc">
+          <td>A: incremental expansion<br><span class="sc-sub">+2,474 MW new build</span></td>
+          <td>+2,474</td><td>+274.6</td><td>+51.2</td><td>+7.8</td><td>—</td>
+          <td><strong>+59.1</strong></td><td><strong>+0.023%</strong></td>
+        </tr>
+        <tr class="sc-row-a">
+          <td><strong>Scenario A total</strong><br><span class="sc-sub">3,000 MW by 2030</span></td>
+          <td>3,000</td><td>350.7</td><td>66.9</td><td>10.0</td><td>0.2</td>
+          <td><strong>77.1</strong></td><td><strong>0.030%</strong></td>
+        </tr>
+        <tr class="sc-row-b-inc">
+          <td>B: incremental VAT + Duty<br><span class="sc-sub">Universal, on A base</span></td>
+          <td>3,000</td><td>350.7</td><td>—</td><td>—</td><td>+16.4</td>
+          <td><strong>+16.4</strong></td><td><strong>+0.025%</strong></td>
+        </tr>
+        <tr class="sc-row-ab">
+          <td><strong>Combined A + B</strong><br><span class="sc-sub">Full expansion + universal VAT</span></td>
+          <td>3,000</td><td>350.7</td><td>66.9</td><td>10.0</td><td>16.6</td>
+          <td><strong>93.5</strong></td><td><strong>0.055%</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="sc-footnote">CIT / SD / VAT+Duty in IDR T cumulative over incentive periods. Ann. % GDP = annual peak CIT foregone as % of 2024 GDP (IDR 22,139T). Scenario B VAT+Duty: IDR 13.5T (VAT) + IDR 3.1T (duty) = IDR 16.4T incremental on IDR 122.7T equipment base (35% of IDR 350.7T).</p>
 </div>
 
 <!-- DATABASE -->
