@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Indonesia Data Center Database",
-    "last_updated": "2026-03-11",
+    "last_updated": "2026-03-18",
     "sources": [
       "Arizton Advisory & Intelligence",
       "Mordor Intelligence",
@@ -14,12 +14,15 @@
     "notes": "Capacity figures represent IT load capacity where available. Some facilities lack public MW disclosures."
   },
   "market_summary": {
-    "total_existing_facilities": 88,
-    "total_upcoming_facilities": 25,
+    "total_tracked_facilities": 50,
+    "operational": 27,
+    "under_construction": 12,
+    "planned": 10,
     "cities_covered": 17,
-    "operational_capacity_mw": 307,
-    "additional_capacity_2025_2030_mw": 563,
-    "total_projected_capacity_2030_mw": 3560,
+    "operational_capacity_mw": 526,
+    "pipeline_capacity_mw": 2563,
+    "total_identified_capacity_mw": 3089,
+    "total_investment_usd_billion": 24.4,
     "market_value_2025_usd_billion": 2.81,
     "market_value_2031_projected_usd_billion": 6.08,
     "cagr_percent": 13.73,
@@ -64,7 +67,7 @@
     {
       "company": "BDx Indonesia",
       "project": "CGK4 Jatiluhur AI Campus",
-      "investment_usd_billion": null,
+      "investment_usd_billion": 4.905,
       "capacity_mw": 500,
       "status": "Planned",
       "timeline": "2027"
@@ -78,12 +81,12 @@
       "timeline": "2026"
     },
     {
-      "company": "Korea Investment Partners / Sinar Mas Land + Digital Realty / Mitra Aditama",
-      "project": "Multiple JV Facilities",
-      "investment_usd_billion": 0.75,
-      "capacity_mw": null,
-      "status": "Planned",
-      "timeline": "2024-2026"
+      "company": "K2 Strategic (Korea Investment / Sinar Mas Land JV)",
+      "project": "K2 JKT1 + K2 Karawang Campus + KMG Jakarta AI Data Hub",
+      "investment_usd_billion": 1.166,
+      "capacity_mw": 176.6,
+      "status": "Operational / Planned / Under Construction",
+      "timeline": "2024-2027"
     },
     {
       "company": "Indosat-NVIDIA",
@@ -95,16 +98,24 @@
     },
     {
       "company": "Princeton Digital Group",
-      "project": "Cibitung AI Campus + Batam",
+      "project": "Cibitung Campus",
       "investment_usd_billion": 0.11,
-      "capacity_mw": 118,
-      "status": "Under Construction / Planned",
-      "timeline": "2025-2026"
+      "capacity_mw": 22,
+      "status": "Under Construction",
+      "timeline": "2025"
+    },
+    {
+      "company": "Princeton Digital Group",
+      "project": "Batam Campus",
+      "investment_usd_billion": 0.659,
+      "capacity_mw": 96,
+      "status": "Planned",
+      "timeline": "2026"
     },
     {
       "company": "EdgeConneX",
       "project": "Jakarta Campus Expansion",
-      "investment_usd_billion": null,
+      "investment_usd_billion": 0.396,
       "capacity_mw": 200,
       "status": "Under Construction",
       "timeline": "2025"
@@ -152,15 +163,20 @@
     "tax_holiday_allowance_2018_2022_idr_trillion": 20,
     "investment_attracted_2018_2022_idr_trillion": 370,
     "estimated_dc_sector_tax_expenditure": {
-      "methodology": "Bottom-up estimate based on known investments and tax holiday parameters",
-      "total_announced_dc_investment_usd_billion": 11.2,
-      "assumed_profit_margin_percent": 15,
-      "implied_annual_taxable_income_usd_billion": 1.68,
-      "cit_rate_percent": 22,
-      "annual_revenue_foregone_full_holiday_usd_million": 370,
-      "annual_revenue_foregone_full_holiday_idr_trillion": 5.7,
-      "ten_year_cumulative_foregone_usd_billion": 3.7,
-      "notes": "Estimate assumes all major investments qualify for 100% tax holiday. Actual foregone revenue depends on profitability timelines, depreciation schedules, and OECD Pillar Two adjustments. Conservative estimate."
+      "methodology": "Bottom-up facility-level estimate: investment × 12% ROIC × applicable CIT rate (22% for non-Pillar Two; 7% net for Pillar Two MNEs), summed across 50 tracked facilities",
+      "total_announced_dc_investment_usd_billion": 24.4,
+      "assumed_roic_percent": 12,
+      "implied_annual_taxable_income_usd_billion": 2.93,
+      "cit_standard_rate_percent": 22,
+      "cit_pillar2_net_rate_percent": 7,
+      "annual_cit_foregone_usd_million": 489,
+      "annual_cit_foregone_idr_trillion": 7.72,
+      "cumulative_cit_foregone_idr_trillion": 118.7,
+      "super_deduction_cumulative_idr_trillion": 11.0,
+      "sez_vat_and_duty_idr_trillion": 21.5,
+      "grand_total_cumulative_foregone_usd_billion": 9.6,
+      "grand_total_cumulative_foregone_idr_trillion": 151.2,
+      "notes": "Covers 50 major facilities (27 operational, 12 UC, 10 planned, 1 unknown). Pillar Two MNEs (21 operators) subject to 15% global minimum — Indonesia retains only 7% net CIT after domestic top-up; remaining 8% accrues to home-country treasury. SEZ figure includes import duty exemptions on equipment. Cumulative figures span full tax holiday period per facility, not a fixed 10-year horizon."
     }
   }
 }
