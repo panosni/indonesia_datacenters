@@ -1,3 +1,6 @@
+# Site config (contains access code — never commit)
+docs/config.js
+
 # LaTeX auxiliary files
 *.aux
 *.log

@@ -23,6 +23,7 @@
   </div>
 </div>
 
+<script src="config.js"></script>
 <script>
 (function() {
   if (sessionStorage.getItem('dc_auth') === '1') {
@@ -32,7 +33,7 @@
   }
 })();
 function checkPw() {
-  if (document.getElementById('pw-input').value === 'data2026') {
+  if (document.getElementById('pw-input').value === ACCESS_CODE) {
     sessionStorage.setItem('dc_auth', '1');
     document.getElementById('pw-gate').style.display = 'none';
     document.body.style.overflow = '';
