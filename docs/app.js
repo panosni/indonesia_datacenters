@@ -171,17 +171,17 @@ new Chart(document.getElementById('capChart'), {
 new Chart(document.getElementById('fiscalChart'), {
   type: 'doughnut',
   data: {
-    labels: ['CIT Holiday (IDR 118.7T)', 'Super Deduction (IDR 11.0T)', 'SEZ VAT & Duty (IDR 1.0T)'],
+    labels: ['CIT Holiday (IDR 118.7T)', 'Super Deduction (IDR 11.0T)', 'SEZ VAT Exemption (IDR 0.8T)', 'Import Duty Exemption (IDR 20.7T)'],
     datasets: [{
-      data: [118.7, 11.0, 1.0],
-      backgroundColor: ['#C0392B','#E67E22','#16A085'],
+      data: [118.7, 11.0, 0.8, 20.7],
+      backgroundColor: ['#C0392B','#E67E22','#16A085','#2980B9'],
       hoverOffset: 8
     }]
   },
   options: {
     plugins: {
       legend: { position: 'right', labels: { font: { size: 12 }, padding: 12 } },
-      title: { display: true, text: 'Cumulative Fiscal Cost by Instrument (IDR Trillion, total IDR 130.7T)', font: { size: 13 } }
+      title: { display: true, text: 'Cumulative Fiscal Cost by Instrument (IDR Trillion, total IDR 151.2T)', font: { size: 13 } }
     }
   }
 });

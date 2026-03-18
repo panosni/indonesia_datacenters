@@ -11,6 +11,39 @@
 </head>
 <body>
 
+<!-- PASSWORD GATE -->
+<div id="pw-gate">
+  <div id="pw-box">
+    <div id="pw-logo">&#x1F1EE;&#x1F1E9;</div>
+    <h2>Data Centers in Indonesia</h2>
+    <p>Enter access code to continue</p>
+    <input type="password" id="pw-input" placeholder="Access code" onkeydown="if(event.key==='Enter')checkPw()">
+    <button onclick="checkPw()">Enter</button>
+    <div id="pw-error"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  if (sessionStorage.getItem('dc_auth') === '1') {
+    document.getElementById('pw-gate').style.display = 'none';
+  } else {
+    document.body.style.overflow = 'hidden';
+  }
+})();
+function checkPw() {
+  if (document.getElementById('pw-input').value === 'data2026') {
+    sessionStorage.setItem('dc_auth', '1');
+    document.getElementById('pw-gate').style.display = 'none';
+    document.body.style.overflow = '';
+  } else {
+    document.getElementById('pw-error').textContent = 'Incorrect code. Please try again.';
+    document.getElementById('pw-input').value = '';
+    document.getElementById('pw-input').focus();
+  }
+}
+</script>
+
 <nav>
   <div class="brand">&#x1F1EE;&#x1F1E9; Data Centers <span>in Indonesia</span></div>
   <ul>
@@ -30,7 +63,7 @@
     <div class="kpi"><div class="val">526 MW</div><div class="lbl">Operational Capacity</div></div>
     <div class="kpi"><div class="val">3,000 MW</div><div class="lbl">Expansion Target (2030)</div></div>
     <div class="kpi"><div class="val">0.035%</div><div class="lbl">Annual Fiscal Cost (peak % GDP)</div></div>
-    <div class="kpi"><div class="val">0.590%</div><div class="lbl">Cumulative Fiscal Cost (% GDP)</div></div>
+    <div class="kpi"><div class="val">0.683%</div><div class="lbl">Cumulative Fiscal Cost (% GDP)</div></div>
   </div>
 </div>
 
@@ -69,7 +102,7 @@
   <div class="section-title">Fiscal Cost of Tax Incentives</div>
   <div class="fiscal-grid">
     <div class="fiscal-kpi red"><div class="fval">0.035%</div><div class="flbl">Annual Fiscal Cost (% of GDP)</div><div class="fnote">Peak annual CIT foregone: IDR 7.7T in 2027. Ramps from IDR 4.0T (0.018% of GDP) in 2025 as facilities come online. Net of QDMTT for 21 GMT-subject MNEs</div></div>
-    <div class="fiscal-kpi navy"><div class="fval">0.590%</div><div class="flbl">Cumulative Fiscal Cost (% of 2024 GDP)</div><div class="fnote">IDR 130.7T (USD 8.27B) over all incentive periods. Equivalent to 19.5% of the annual government education budget</div></div>
+    <div class="fiscal-kpi navy"><div class="fval">0.683%</div><div class="flbl">Cumulative Fiscal Cost (% of 2024 GDP)</div><div class="fnote">IDR 151.2T (USD 9.57B) over all incentive periods. Equivalent to 22.6% of the annual government education budget</div></div>
   </div>
 
   <!-- Pie chart -->

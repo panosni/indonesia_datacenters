@@ -146,6 +146,35 @@ table.dc-table { width: 100%; border-collapse: collapse; font-size: .835rem; }
 .mw-bar-wrap { display: flex; align-items: center; gap: .4rem; }
 .mw-bar { height: 6px; border-radius: 3px; min-width: 2px; }
 
+/* PASSWORD GATE */
+#pw-gate {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+}
+#pw-box {
+  background: var(--white); border-radius: 16px; padding: 2.5rem 3rem;
+  text-align: center; max-width: 380px; width: 90%;
+  box-shadow: 0 20px 60px rgba(0,0,0,.5);
+}
+#pw-logo { font-size: 2.5rem; margin-bottom: .75rem; }
+#pw-box h2 { color: var(--navy); font-size: 1.4rem; font-weight: 800; margin-bottom: .4rem; }
+#pw-box p  { color: var(--muted); font-size: .88rem; margin-bottom: 1.5rem; }
+#pw-input {
+  width: 100%; padding: .7rem 1rem; border: 2px solid var(--mid);
+  border-radius: 8px; font-size: 1rem; outline: none;
+  text-align: center; letter-spacing: .15em; margin-bottom: .75rem;
+  font-family: inherit;
+}
+#pw-input:focus { border-color: var(--blue); }
+#pw-box button {
+  width: 100%; padding: .7rem; background: var(--navy); color: white;
+  border: none; border-radius: 8px; font-size: 1rem; font-weight: 700;
+  cursor: pointer; transition: background .2s; font-family: inherit;
+}
+#pw-box button:hover { background: var(--blue); }
+#pw-error { color: var(--red); font-size: .82rem; margin-top: .6rem; min-height: 1.2em; }
+
 /* FOOTER */
 footer {
   background: var(--navy); color: rgba(255,255,255,.6);
