@@ -71,11 +71,11 @@ company press releases, and Indonesian Ministry of Finance data.}
 Indonesia's data center market is experiencing rapid expansion, driven by the country's growing digital economy, hyperscaler cloud region deployments, and AI infrastructure demand. Key findings:
 
 \begin{itemize}[leftmargin=*]
-    \item \textbf{88 existing facilities} across 17 cities, with \textbf{25 upcoming} facilities in various stages of development.
-    \item Total operational IT load capacity of approximately \textbf{307~MW} (2024), projected to reach \textbf{3,560~MW by 2030}.
+    \item \textbf{27 operational facilities} across multiple cities, with additional facilities under construction or planned, representing a \textbf{526~MW} operational baseline.
+    \item Total operational IT load capacity of \textbf{526~MW} (baseline), with a committed pipeline (operational + under construction) of \textbf{983~MW} and an expansion target of \textbf{3,000~MW by 2030}.
     \item Over \textbf{USD~11.2~billion} in announced data center investments, led by Digital Edge (USD~4.5B), DAMAC Digital (USD~2.3B), and Microsoft (USD~1.7B).
     \item Indonesia offers \textbf{100\% corporate income tax holidays} for up to 20 years for qualifying data center investments above IDR~500~billion.
-    \item We estimate the annual fiscal cost (revenue foregone) from data-center-specific tax holidays at approximately \textbf{USD~370~million per year}, with a cumulative ten-year cost of \textbf{USD~3.7~billion}.
+    \item The baseline annual fiscal cost (revenue foregone) is \textbf{IDR~18.0~trillion} cumulative (0.007\% of GDP). Under a full expansion to 3,000~MW (Scenario~B), the cumulative fiscal cost rises to \textbf{IDR~77.1~trillion} (0.030\% of GDP); with universal VAT/duty exemptions added (Combined B), it reaches \textbf{IDR~93.3~trillion} (0.055\% of GDP).
 \end{itemize}
 
 % ============================================================
@@ -84,7 +84,7 @@ Indonesia's data center market is experiencing rapid expansion, driven by the co
 
 \subsection{Market Size and Growth}
 
-The Indonesia data center market was valued at \textbf{USD~2.81~billion in 2025} and is projected to reach \textbf{USD~6.08~billion by 2031}, growing at a CAGR of 13.73\%. In IT load capacity terms, the market is expected to expand from 1,440~MW in 2025 to 3,560~MW by 2030 (CAGR: 19.89\%).
+The Indonesia data center market was valued at \textbf{USD~2.81~billion in 2025} and is projected to reach \textbf{USD~6.08~billion by 2031}, growing at a CAGR of 13.73\%. In IT load capacity terms, the market is expected to expand from 1,440~MW in 2025 to 3,560~MW by 2030 (CAGR: 19.89\%). As of the 2026 baseline used in fiscal modelling, \textbf{27 operational facilities} account for \textbf{526~MW} of commissioned capacity, with total committed capacity (operational plus under construction) reaching \textbf{983~MW}.
 
 \begin{table}[H]
 \centering
@@ -264,38 +264,78 @@ The 15\% global minimum tax creates a structural challenge: if Indonesia grants 
 
 Indonesia's total tax expenditure in 2023 was \textbf{IDR~362.5~trillion (USD~23.8~billion)}, equivalent to 1.73\% of GDP. Tax holidays and allowances specifically accounted for IDR~20~trillion over the 2018--2022 period, attracting IDR~370~trillion in investment---an \textbf{18.5x leverage ratio}.
 
-\subsection{Estimated Data Center Tax Revenue Foregone}
+\subsection{Baseline Fiscal Cost}
 
-We construct a bottom-up estimate of the fiscal cost of tax holidays for the data center sector:
+The 2026 baseline comprises \textbf{27 operational facilities} with \textbf{526~MW} of commissioned capacity and a total investment base of \textbf{IDR~76.1~trillion}. CIT holiday entitlements are net of the Qualified Domestic Minimum Top-up Tax (QDMTT) for 13 GMT-subject MNEs. The cumulative fiscal cost over applicable incentive periods is:
 
 \begin{table}[H]
 \centering
-\caption{Estimated Annual Revenue Foregone from Data Center Tax Holidays}
-\begin{tabular}{lr}
+\caption{Baseline Fiscal Cost --- 27 Operational Facilities (526~MW)}
+\begin{tabular}{lrr}
 \toprule
-\textbf{Parameter} & \textbf{Value} \\
+\textbf{Incentive} & \textbf{IDR Trillion (cumulative)} & \textbf{Annual \% GDP} \\
 \midrule
-Total announced DC investment        & USD 11.2 billion \\
-Assumed annual revenue (at maturity)  & USD 7.6 billion \\
-Assumed operating profit margin       & 22\% \\
-Implied taxable income                & USD 1.68 billion \\
-CIT rate                              & 22\% \\
-\textbf{Annual CIT foregone (100\% holiday)}  & \textbf{USD 370 million} \\
-\textbf{Equivalent in IDR}                    & \textbf{$\sim$IDR 5.7 trillion} \\
+CIT Holiday (net of QDMTT) & 15.7 & \\
+Super Deduction            & 2.2  & \\
+VAT / Import Duty          & 0.2  & \\
 \midrule
-\textit{10-year cumulative foregone}  & \textit{USD 3.7 billion} \\
-\textit{As \% of 2023 total tax expenditure}  & \textit{$\sim$1.6\%} \\
+\textbf{Total}             & \textbf{18.0} & \textbf{0.007\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent Annual \%~GDP is calculated as: $\frac{\text{CIT cumulative} / 10\,\text{yr} + \text{VAT+Duty cumulative} / 3\,\text{yr}}{\text{IDR }22{,}139\,\text{T (2024 GDP)}}$.
+
+\subsection{Policy Scenario Fiscal Costs}
+
+We model six scenarios ranging from the current operational baseline to a full 3,000~MW expansion with universal VAT/duty exemptions. All figures are cumulative over applicable incentive periods; investment cost assumes \textbf{IDR~111~billion per MW} for new builds.
+
+\begin{table}[H]
+\centering
+\caption{Policy Scenarios --- Fiscal Cost Summary (IDR Trillion, Cumulative)}
+\small
+\begin{tabular}{p{4.2cm}rrrrrr}
+\toprule
+\textbf{Scenario} & \textbf{MW} & \textbf{Invest.} & \textbf{CIT} & \textbf{SD} & \textbf{VAT+Duty} & \textbf{Total} \\
+ & & \textbf{(IDR T)} & \textbf{(IDR T)} & \textbf{(IDR T)} & \textbf{(IDR T)} & \textbf{(IDR T)} \\
+\midrule
+Baseline                 & 526   & 76.1  & 15.7 & 2.2 & 0.2  & 18.0 \\
+\quad A: incremental     & +1,474 & +163.6 & +30.5 & +4.6 & --- & +35.1 \\
+\textbf{Scenario A total}& \textbf{2,000} & \textbf{239.7} & \textbf{46.2} & \textbf{6.8} & \textbf{0.2} & \textbf{53.2} \\
+\quad B: incremental     & +2,474 & +274.6 & +51.2 & +7.8 & --- & +59.1 \\
+\textbf{Scenario B total}& \textbf{3,000} & \textbf{350.7} & \textbf{66.9} & \textbf{10.0} & \textbf{0.2} & \textbf{77.1} \\
+\textbf{Combined A + VAT}& \textbf{2,000} & \textbf{239.7} & \textbf{46.2} & \textbf{6.8} & \textbf{11.2} & \textbf{64.2} \\
+\textbf{Combined B + VAT}& \textbf{3,000} & \textbf{350.7} & \textbf{66.9} & \textbf{10.0} & \textbf{16.4} & \textbf{93.3} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent\textit{CIT = Corporate Income Tax Holiday; SD = Super Deduction; VAT+Duty = VAT exemption (11\%) + import duty waiver (2.5\%) on equipment (35\% of total investment). Combined A: IDR~9.2T VAT + IDR~2.0T duty on IDR~83.9T equipment base. Combined B: IDR~13.5T VAT + IDR~2.9T duty on IDR~122.7T equipment base.}
+
+\begin{table}[H]
+\centering
+\caption{Policy Scenarios --- Annual Fiscal Cost as \% of 2024 GDP}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Scenario} & \textbf{Total Cumulative (IDR T)} & \textbf{Annual \% GDP} \\
+\midrule
+Baseline                 & 18.0 & 0.007\% \\
+Scenario A (2,000 MW)    & 53.2 & 0.021\% \\
+Scenario B (3,000 MW)    & 77.1 & 0.030\% \\
+Combined A + VAT         & 64.2 & 0.038\% \\
+Combined B + VAT         & 93.3 & 0.055\% \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \noindent\textbf{Key assumptions and caveats}:
 \begin{enumerate}[leftmargin=*]
-    \item Not all investments will qualify for the maximum 100\% holiday; some receive 50\% reductions.
-    \item Data centers have long ramp-up periods (2--4 years) before reaching full profitability; revenue foregone is lower in early years.
-    \item OECD Pillar Two will reduce the effective holiday for large MNEs by imposing a 15\% domestic top-up, recovering approximately \textbf{USD~250~million annually} of the foregone amount.
-    \item The estimate does not include \textbf{indirect fiscal benefits}: job creation, digital economy growth (target: USD~130B by 2025), increased VAT from downstream services, and property/land taxes.
-    \item SEZ-related VAT exemptions on equipment imports add an estimated \textbf{USD~120--180~million} in additional revenue foregone (one-time, during construction phases).
+    \item \textbf{New build cost}: IDR~111~billion per MW for all incremental capacity.
+    \item \textbf{Entrant mix}: 43\% GMT-subject MNEs / 57\% non-GMT entities; 10-year CIT holiday assumed for all new entrants.
+    \item \textbf{No new SEZ concessions} assumed under Scenarios A or B; SEZ VAT benefits are already reflected in the baseline 0.2~IDR~T figure.
+    \item \textbf{VAT/Import Duty} (Combined scenarios only): extends the existing SEZ VAT exemption (11\%) and import duty waiver (2.5\%) universally to all operators; equipment share assumed at 35\% of total investment; amortised over a 3-year construction/import phase.
+    \item \textbf{OECD Pillar Two}: the QDMTT ensures the 15\% minimum tax floor is collected domestically for GMT-subject MNEs, reducing the effective cost of CIT holidays for that subset.
+    \item The estimates do not include \textbf{indirect fiscal benefits}: job creation (15,000--25,000 direct jobs), digital economy growth, increased VAT from downstream services, and property/land taxes.
 \end{enumerate}
 
 \subsection{Cost-Benefit Perspective}
@@ -307,8 +347,10 @@ CIT rate                              & 22\% \\
 \toprule
 \textbf{Metric} & \textbf{Estimate} \\
 \midrule
-Annual tax revenue foregone (CIT)             & USD 370M \\
-SEZ VAT foregone (construction, one-time)     & USD 120--180M \\
+Baseline cumulative fiscal cost               & IDR 18.0T (0.007\% GDP/yr) \\
+Scenario A total (2,000 MW)                   & IDR 53.2T (0.021\% GDP/yr) \\
+Scenario B total (3,000 MW)                   & IDR 77.1T (0.030\% GDP/yr) \\
+Combined B + VAT (3,000 MW)                   & IDR 93.3T (0.055\% GDP/yr) \\
 Direct jobs created (construction + ops)       & 15,000--25,000 \\
 Indirect/induced employment                   & 50,000--80,000 \\
 Data center market value contribution (2025)   & USD 2.81B \\
@@ -323,10 +365,11 @@ Investment leverage ratio (historical)         & 18.5x \\
 % ============================================================
 
 \begin{enumerate}[leftmargin=*]
-    \item Indonesia has become a \textbf{major data center destination} in Southeast Asia, with over USD~11B in announced investments and 25 facilities under development.
-    \item The tax holiday regime is a \textbf{significant driver} of investment: historical data shows an 18.5x investment-to-incentive leverage ratio.
-    \item The estimated annual fiscal cost of \textbf{USD~370M} (IDR~5.7T) is substantial but modest relative to Indonesia's total tax expenditure (IDR~362.5T) and the economic multiplier effects.
-    \item The \textbf{OECD Pillar Two} global minimum tax will structurally reduce the effective cost of tax holidays by ensuring a 15\% floor, potentially recovering USD~250M annually.
+    \item Indonesia has become a \textbf{major data center destination} in Southeast Asia, with 27 operational facilities (526~MW baseline), a committed pipeline of 983~MW, and an expansion target of 3,000~MW by 2030.
+    \item The tax holiday regime is a \textbf{significant driver} of investment: historical data shows an 18.5x investment-to-incentive leverage ratio. The baseline annual fiscal cost is just \textbf{0.007\% of GDP}; even the most expansive scenario (Combined B + VAT) reaches only \textbf{0.055\% of GDP}.
+    \item \textbf{Scenario A} (2,000~MW, +1,474~MW incremental) yields a cumulative fiscal cost of \textbf{IDR~53.2~trillion} (0.021\% GDP/yr); \textbf{Scenario B} (3,000~MW, +2,474~MW) reaches \textbf{IDR~77.1~trillion} (0.030\% GDP/yr).
+    \item Adding \textbf{universal VAT/duty exemptions} (extending SEZ privileges to all operators) adds IDR~11.2~trillion under Scenario A and IDR~16.4~trillion under Scenario B, for combined costs of IDR~64.2~trillion and IDR~93.3~trillion respectively.
+    \item The \textbf{OECD Pillar Two} global minimum tax (QDMTT) ensures the 15\% floor is collected domestically for GMT-subject MNEs (43\% of new entrants assumed), reducing the effective CIT holiday cost for that subset.
     \item \textbf{Jakarta} will remain the primary hub, but \textbf{Batam}'s SEZ advantages position it as a fast-growing alternative, especially for Singapore-linked workloads.
 \end{enumerate}
 
