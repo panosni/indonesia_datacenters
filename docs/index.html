@@ -131,15 +131,21 @@ function checkPw() {
     </div>
     <div class="scenario-card sc-a">
       <div class="sc-tag">Scenario A</div>
-      <div class="sc-name">Expansion to 3,000 MW by 2030</div>
-      <div class="sc-mw">+2,474 MW</div>
+      <div class="sc-name">Expansion to 2,000 MW by 2030</div>
+      <div class="sc-mw">+1,474 MW</div>
       <div class="sc-desc">New capacity at IDR 111B/MW. New entrants: 43% GMT / 57% non-GMT, 10-yr holiday. No new SEZ concessions.</div>
     </div>
     <div class="scenario-card sc-b">
       <div class="sc-tag">Scenario B</div>
-      <div class="sc-name">Universal VAT &amp; Duty (on A base)</div>
-      <div class="sc-mw">3,000 MW</div>
-      <div class="sc-desc">Extends SEZ VAT + import duty to all operators (35% equipment share) on the 3,000 MW / IDR 350.7T base. Incremental on top of Scenario A.</div>
+      <div class="sc-name">Expansion to 3,000 MW by 2030</div>
+      <div class="sc-mw">+2,474 MW</div>
+      <div class="sc-desc">New capacity at IDR 111B/MW. New entrants: 43% GMT / 57% non-GMT, 10-yr holiday. No new SEZ concessions.</div>
+    </div>
+    <div class="scenario-card sc-c">
+      <div class="sc-tag">VAT / Import Duty</div>
+      <div class="sc-name">Universal VAT Exemption + Import Duty Waiver</div>
+      <div class="sc-mw">+VAT &amp; Duty</div>
+      <div class="sc-desc">Extends SEZ VAT exemption (11%) + import duty waiver (2.5%) to all operators on the equipment share (35% of investment). Shown combined with A (2,000 MW base) and B (3,000 MW base).</div>
     </div>
   </div>
 
@@ -164,29 +170,39 @@ function checkPw() {
           <td><strong>18.0</strong></td><td><strong>0.007%</strong></td>
         </tr>
         <tr class="sc-row-a-inc">
-          <td>A: incremental expansion<br><span class="sc-sub">+2,474 MW new build</span></td>
+          <td>A: incremental expansion<br><span class="sc-sub">+1,474 MW new build</span></td>
+          <td>+1,474</td><td>+163.6</td><td>+30.5</td><td>+4.6</td><td>—</td>
+          <td><strong>+35.1</strong></td><td><strong>+0.014%</strong></td>
+        </tr>
+        <tr class="sc-row-a">
+          <td><strong>Scenario A total</strong><br><span class="sc-sub">2,000 MW by 2030</span></td>
+          <td>2,000</td><td>239.7</td><td>46.2</td><td>6.8</td><td>0.2</td>
+          <td><strong>53.2</strong></td><td><strong>0.021%</strong></td>
+        </tr>
+        <tr class="sc-row-b-inc">
+          <td>B: incremental expansion<br><span class="sc-sub">+2,474 MW new build</span></td>
           <td>+2,474</td><td>+274.6</td><td>+51.2</td><td>+7.8</td><td>—</td>
           <td><strong>+59.1</strong></td><td><strong>+0.023%</strong></td>
         </tr>
-        <tr class="sc-row-a">
-          <td><strong>Scenario A total</strong><br><span class="sc-sub">3,000 MW by 2030</span></td>
+        <tr class="sc-row-b">
+          <td><strong>Scenario B total</strong><br><span class="sc-sub">3,000 MW by 2030</span></td>
           <td>3,000</td><td>350.7</td><td>66.9</td><td>10.0</td><td>0.2</td>
           <td><strong>77.1</strong></td><td><strong>0.030%</strong></td>
         </tr>
-        <tr class="sc-row-b-inc">
-          <td>B: incremental VAT + Duty<br><span class="sc-sub">Universal, on A base</span></td>
-          <td>3,000</td><td>350.7</td><td>—</td><td>—</td><td>+16.4</td>
-          <td><strong>+16.4</strong></td><td><strong>+0.025%</strong></td>
+        <tr class="sc-row-vat-a">
+          <td><strong>Combined A + VAT Exemption</strong><br><span class="sc-sub">2,000 MW + universal VAT &amp; duty</span></td>
+          <td>2,000</td><td>239.7</td><td>46.2</td><td>6.8</td><td>11.2</td>
+          <td><strong>64.2</strong></td><td><strong>0.038%</strong></td>
         </tr>
-        <tr class="sc-row-ab">
-          <td><strong>Combined A + B</strong><br><span class="sc-sub">Full expansion + universal VAT</span></td>
-          <td>3,000</td><td>350.7</td><td>66.9</td><td>10.0</td><td>16.6</td>
-          <td><strong>93.5</strong></td><td><strong>0.055%</strong></td>
+        <tr class="sc-row-vat-b">
+          <td><strong>Combined B + VAT Exemption</strong><br><span class="sc-sub">3,000 MW + universal VAT &amp; duty</span></td>
+          <td>3,000</td><td>350.7</td><td>66.9</td><td>10.0</td><td>16.4</td>
+          <td><strong>93.3</strong></td><td><strong>0.055%</strong></td>
         </tr>
       </tbody>
     </table>
   </div>
-  <p class="sc-footnote">CIT / SD / VAT+Duty in IDR T cumulative over incentive periods. Ann. % GDP = annual peak CIT foregone as % of 2024 GDP (IDR 22,139T). Scenario B VAT+Duty: IDR 13.5T (VAT) + IDR 3.1T (duty) = IDR 16.4T incremental on IDR 122.7T equipment base (35% of IDR 350.7T).</p>
+  <p class="sc-footnote">CIT / SD / VAT+Duty in IDR T cumulative over incentive periods. Ann. % GDP = (CIT cumul. / 10 yr + VAT+Duty cumul. / 3 yr) ÷ IDR 22,139T (2024 GDP). VAT+Duty: 11% VAT exemption + 2.5% import duty waiver on equipment (35% of total investment). Combined A: IDR 9.2T VAT + IDR 2.0T duty = IDR 11.2T on IDR 83.9T equipment base (35% of IDR 239.7T). Combined B: IDR 13.5T VAT + IDR 2.9T duty = IDR 16.4T on IDR 122.7T equipment base (35% of IDR 350.7T).</p>
 </div>
 
 <!-- DATABASE -->
