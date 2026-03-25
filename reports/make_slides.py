@@ -308,7 +308,156 @@ add_textbox(sl2, tbl_l, Inches(6.85), tbl_w, Inches(0.35),
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SLIDE 4 — ASSUMPTIONS
+# SLIDE 4 — FISCAL SCENARIOS
+# ══════════════════════════════════════════════════════════════════════════════
+sl_sc = prs.slides.add_slide(blank_layout)
+header_bar(sl_sc, "Fiscal Scenarios: Cost Projections (A & B)")
+
+col_l_left  = Inches(0.35)
+col_l_right = Inches(6.90)
+col_w_half  = Inches(6.10)
+
+# ── Left column: Scenario A ────────────────────────────────────────────────
+add_textbox(sl_sc, col_l_left, Inches(0.92), col_w_half, Inches(0.25),
+            "Scenario A — Expansion to 2,000 MW (2030)",
+            font_size=10, bold=True, color=NAVY)
+add_textbox(sl_sc, col_l_left, Inches(1.18), col_w_half, Inches(0.28),
+            "+1,474 MW from 526 MW base at IDR 111B/MW; 43% GMT / 57% non-GMT, 10-yr holiday.",
+            font_size=8, color=BLACK)
+
+sc_a_data = [
+    ["Metric",                          "Value"],
+    ["Baseline MW (operational)",       "526 MW"],
+    ["Baseline annual cost",            "IDR 1.57T"],
+    ["2030 annual cost (2,000 MW)",     "IDR 4.62T"],
+    ["% 2024 GDP",                      "0.021%"],
+    ["% 2030 GDP (est.)",               "0.014%"],
+    ["Scenario A cumulative",           "IDR 53.2T"],
+]
+n_rows_a = len(sc_a_data)
+tbl_a_t  = Inches(1.50)
+tbl_a_h  = Inches(2.05)
+t_a = sl_sc.shapes.add_table(n_rows_a, 2, col_l_left, tbl_a_t,
+                              int(col_w_half), int(tbl_a_h)).table
+t_a.columns[0].width = int(col_w_half * 0.60)
+t_a.columns[1].width = int(col_w_half * 0.40)
+
+for r, row_data in enumerate(sc_a_data):
+    is_hdr = (r == 0)
+    bg = NAVY if is_hdr else (LGRAY if r % 2 == 0 else WHITE)
+    fg = WHITE if is_hdr else BLACK
+    bold_row = is_hdr or r == 3  # highlight 2030 annual cost row
+    for c, val in enumerate(row_data):
+        align = PP_ALIGN.LEFT if c == 0 else PP_ALIGN.CENTER
+        table_cell(t_a, r, c, val, font_size=8.5, bold=bold_row,
+                   fg=fg, bg=bg, align=align)
+
+# ── Left column: Scenario B ────────────────────────────────────────────────
+add_textbox(sl_sc, col_l_left, Inches(3.68), col_w_half, Inches(0.25),
+            "Scenario B — Expansion to 3,000 MW (2030)",
+            font_size=10, bold=True, color=NAVY)
+add_textbox(sl_sc, col_l_left, Inches(3.94), col_w_half, Inches(0.25),
+            "+2,474 MW from 526 MW base; same mix and holiday as Scenario A.",
+            font_size=8, color=BLACK)
+
+sc_b_data = [
+    ["Metric",                          "Value"],
+    ["2030 annual cost (3,000 MW)",     "IDR 6.69T"],
+    ["% 2024 GDP",                      "0.030%"],
+    ["% 2030 GDP (est.)",               "0.020%"],
+    ["Scenario B cumulative",           "IDR 77.1T"],
+]
+n_rows_b = len(sc_b_data)
+tbl_b_t  = Inches(4.22)
+tbl_b_h  = Inches(1.55)
+t_b = sl_sc.shapes.add_table(n_rows_b, 2, col_l_left, tbl_b_t,
+                              int(col_w_half), int(tbl_b_h)).table
+t_b.columns[0].width = int(col_w_half * 0.60)
+t_b.columns[1].width = int(col_w_half * 0.40)
+
+for r, row_data in enumerate(sc_b_data):
+    is_hdr = (r == 0)
+    bg = NAVY if is_hdr else (LGRAY if r % 2 == 0 else WHITE)
+    fg = WHITE if is_hdr else BLACK
+    bold_row = is_hdr or r == 1  # highlight 2030 annual cost row
+    for c, val in enumerate(row_data):
+        align = PP_ALIGN.LEFT if c == 0 else PP_ALIGN.CENTER
+        table_cell(t_b, r, c, val, font_size=8.5, bold=bold_row,
+                   fg=fg, bg=bg, align=align)
+
+# ── Right column: VAT / Import Duty ───────────────────────────────────────
+add_textbox(sl_sc, col_l_right, Inches(0.92), col_w_half, Inches(0.25),
+            "VAT / Import Duty (Universal Extension)",
+            font_size=10, bold=True, color=NAVY)
+add_textbox(sl_sc, col_l_right, Inches(1.18), col_w_half, Inches(0.28),
+            "Extend SEZ VAT (11%) + import duty waiver (2.5%) to all operators; 35% equipment share.",
+            font_size=8, color=BLACK)
+
+vat_data = [
+    ["Component",               "On A base",  "On B base"],
+    ["Equipment base (IDR T)",  "83.9",       "122.7"],
+    ["VAT (11%)",               "9.2",        "13.5"],
+    ["Import duty (2.5%)",      "2.0",        "2.9"],
+    ["VAT+Duty total",          "11.2",       "16.4"],
+]
+n_rows_vat = len(vat_data)
+tbl_vat_t  = Inches(1.50)
+tbl_vat_h  = Inches(1.55)
+t_vat = sl_sc.shapes.add_table(n_rows_vat, 3, col_l_right, tbl_vat_t,
+                                int(col_w_half), int(tbl_vat_h)).table
+t_vat.columns[0].width = int(col_w_half * 0.50)
+t_vat.columns[1].width = int(col_w_half * 0.25)
+t_vat.columns[2].width = int(col_w_half * 0.25)
+
+for r, row_data in enumerate(vat_data):
+    is_hdr  = (r == 0)
+    is_foot = (r == n_rows_vat - 1)
+    bg = NAVY if (is_hdr or is_foot) else (LGRAY if r % 2 == 0 else WHITE)
+    fg = WHITE if (is_hdr or is_foot) else BLACK
+    for c, val in enumerate(row_data):
+        align = PP_ALIGN.LEFT if c == 0 else PP_ALIGN.CENTER
+        table_cell(t_vat, r, c, val, font_size=8.5, bold=(is_hdr or is_foot),
+                   fg=fg, bg=bg, align=align)
+
+# ── Right column: Combined Summary ────────────────────────────────────────
+add_textbox(sl_sc, col_l_right, Inches(3.22), col_w_half, Inches(0.25),
+            "Combined Summary",
+            font_size=10, bold=True, color=NAVY)
+
+comb_data = [
+    ["Scenario",                "Ann. (IDR T)",  "Cum. (IDR T)"],
+    ["Baseline (526 MW)",       "1.57",          "18.1"],
+    ["Scenario A (2,000 MW)",   "4.62",          "53.2"],
+    ["Scenario B (3,000 MW)",   "6.69",          "77.1"],
+    ["Combined A + VAT",        "8.40",          "64.2"],
+    ["Combined B + VAT",        "12.22",         "93.3"],
+]
+n_rows_comb = len(comb_data)
+tbl_comb_t  = Inches(3.50)
+tbl_comb_h  = Inches(2.0)
+t_comb = sl_sc.shapes.add_table(n_rows_comb, 3, col_l_right, tbl_comb_t,
+                                 int(col_w_half), int(tbl_comb_h)).table
+t_comb.columns[0].width = int(col_w_half * 0.52)
+t_comb.columns[1].width = int(col_w_half * 0.24)
+t_comb.columns[2].width = int(col_w_half * 0.24)
+
+for r, row_data in enumerate(comb_data):
+    is_hdr  = (r == 0)
+    is_foot = (r == n_rows_comb - 1)
+    bg = NAVY if (is_hdr or is_foot) else (LGRAY if r % 2 == 0 else WHITE)
+    fg = WHITE if (is_hdr or is_foot) else BLACK
+    for c, val in enumerate(row_data):
+        align = PP_ALIGN.LEFT if c == 0 else PP_ALIGN.CENTER
+        table_cell(t_comb, r, c, val, font_size=8.5, bold=(is_hdr or is_foot),
+                   fg=fg, bg=bg, align=align)
+
+add_textbox(sl_sc, col_l_right, Inches(5.58), col_w_half, Inches(0.28),
+            "Annual = peak CIT/yr + VAT÷3 yr. % 2030 GDP based on IDR 34,167T estimate.",
+            font_size=7.5, color=MGRAY)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# SLIDE 5 — ASSUMPTIONS
 # ══════════════════════════════════════════════════════════════════════════════
 sl3 = prs.slides.add_slide(blank_layout)
 header_bar(sl3, "Key Assumptions")

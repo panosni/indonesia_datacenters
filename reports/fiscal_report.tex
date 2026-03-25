@@ -26,7 +26,7 @@
 \definecolor{kpibg}{RGB}{0,32,96}
 
 % ── Section formatting ───────────────────────────────────────────────
-\titleformat{\section}{\normalsize\bfseries\color{navy}\uppercase}{}{0em}{}[\vspace{-4pt}\color{midgray}\hrule\vspace{4pt}]
+\titleformat{\section}{\normalsize\bfseries\color{navy}}{}{0em}{\MakeUppercase}[\vspace{-4pt}\color{midgray}\hrule\vspace{4pt}]
 \titleformat{\subsection}{\small\bfseries\color{teal}}{}{0em}{}
 \setlist{noitemsep,topsep=2pt,leftmargin=*}
 \renewcommand{\arraystretch}{1.3}
@@ -59,22 +59,22 @@
 
 % ── KPI row ─────────────────────────────────────────────────────────
 \noindent
-\begin{tabularx}{\linewidth}{XXXXX}
-  \cellcolor{kpibg}\centering\textcolor{white}{\textbf{\large IDR 373.9T}} &
-  \cellcolor{kpibg}\centering\textcolor{white}{\textbf{\large IDR 118.2T}} &
-  \cellcolor{kpibg}\centering\textcolor{white}{\textbf{\large IDR 19.1T}}  &
-  \cellcolor{kpibg}\centering\textcolor{white}{\textbf{\large IDR 0.8T}}   &
-  \cellcolor{alertred}\centering\textcolor{white}{\textbf{\large IDR 138.1T}} \\
-  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize Total Investment} &
-  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize Tax Holiday Cost} &
-  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize Super Deduction Cost} &
-  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize SEZ VAT Exemption} &
-  \cellcolor{alertred}\centering\textcolor{white}{\scriptsize \textbf{Grand Total Fiscal Cost}} \\
-  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize (USD 24.1B)} &
-  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize (over holiday periods)} &
-  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize (6 yrs post-holiday)} &
-  \cellcolor{kpibg}\centering\textcolor{white}{\scriptsize (Nongsa KEK only)} &
-  \cellcolor{alertred}\centering\textcolor{white}{\scriptsize (all incentives combined)}\\
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+  \cellcolor{kpibg}\textcolor{white}{\textbf{\large IDR 373.9T}} &
+  \cellcolor{kpibg}\textcolor{white}{\textbf{\large IDR 118.2T}} &
+  \cellcolor{kpibg}\textcolor{white}{\textbf{\large IDR 19.1T}}  &
+  \cellcolor{kpibg}\textcolor{white}{\textbf{\large IDR 0.8T}}   &
+  \cellcolor{alertred}\textcolor{white}{\textbf{\large IDR 138.1T}} \\
+  \cellcolor{kpibg}\textcolor{white}{\scriptsize Total Investment} &
+  \cellcolor{kpibg}\textcolor{white}{\scriptsize Tax Holiday Cost} &
+  \cellcolor{kpibg}\textcolor{white}{\scriptsize Super Deduction Cost} &
+  \cellcolor{kpibg}\textcolor{white}{\scriptsize SEZ VAT Exemption} &
+  \cellcolor{alertred}\textcolor{white}{\scriptsize \textbf{Grand Total Fiscal Cost}} \\
+  \cellcolor{kpibg}\textcolor{white}{\scriptsize (USD 24.1B)} &
+  \cellcolor{kpibg}\textcolor{white}{\scriptsize (over holiday periods)} &
+  \cellcolor{kpibg}\textcolor{white}{\scriptsize (6 yrs post-holiday)} &
+  \cellcolor{kpibg}\textcolor{white}{\scriptsize (Nongsa KEK only)} &
+  \cellcolor{alertred}\textcolor{white}{\scriptsize (all incentives combined)}\\
 \end{tabularx}
 
 \vspace{10pt}
@@ -149,7 +149,7 @@
   \toprule
   \textbf{Pillar 2 Status} & \textbf{Facilities} & \textbf{CIT Forfeited} & \textbf{Holiday Cost} & \textbf{Super Ded. Cost} & \textbf{VAT} & \textbf{Total} \\
   \midrule
-  In scope (revenue $>$\euro750M, margin $>$10\%) & 18 & 7\% above 15\% floor  & 14.024 & 2.622 & 0.119 & \textbf{16.765} \\
+  In scope (revenue $>$\texteuro{}750M, margin $>$10\%) & 18 & 7\% above 15\% floor  & 14.024 & 2.622 & 0.119 & \textbf{16.765} \\
   Not in scope                                    & 27 & 22\% full statutory    & 104.210 & 16.443 & 0.677 & \textbf{121.330} \\
   \midrule
   \rowcolor{lightgray}
@@ -233,7 +233,7 @@
 
 \section{D. BEPS Pillar 2 --- Global Minimum Tax}
 \begin{enumerate}[resume]
-  \item \textbf{Scope criteria:} An operator is classified as Pillar 2 in-scope if its MNE group meets \textit{both}: (i) consolidated group revenue exceeding \euro750M, and (ii) a group profitability (operating income / revenue) exceeding 10\%.
+  \item \textbf{Scope criteria:} An operator is classified as Pillar 2 in-scope if its MNE group meets \textit{both}: (i) consolidated group revenue exceeding \texteuro{}750M, and (ii) a group profitability (operating income / revenue) exceeding 10\%.
   \item \textbf{CIT forfeited (Pillar 2 in scope):} Indonesia forfeits only 7\% (= 22\% statutory $-$ 15\% GloBE minimum floor). The remaining 15\% is collected by the parent jurisdiction as a top-up tax (Qualified Domestic Minimum Top-up Tax or Income Inclusion Rule).
   \item \textbf{CIT forfeited (not in scope):} Indonesia forfeits the full 22\% statutory rate.
   \item \textbf{Result:} 18 of 45 facilities (40\%) are Pillar 2 in-scope, representing IDR 16.8T (12\%) of the total fiscal cost. Pillar 2 meaningfully limits Indonesia's revenue loss only for the in-scope minority.
